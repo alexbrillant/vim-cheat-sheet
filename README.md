@@ -114,17 +114,17 @@
 |`:%s/target/\=@0/g`      |replace target with what is yanked                                 |
 |`:g/href/d`              |delete all lines with pattern                                      |
 |`:v/pattern/d`           |delete all lines that do not match a pattern.                      |
-|`:g/lines/z#.3`          |display context (5 lines) for all occurrences of a pattern.        |
-|`:g//`                   |list all the lines where the last search pattern is                |
-|`qaq:g/pattern/y A`      |copy all lines matching a pattern to register 'a'.                 |
+|`:g/lines/z#.3`          |display context around pattern.        |
+|`:g//`                   |lines where the last search pattern is                |
+|`qaq:g/pattern/y A`      |copy lines matching pattern to register 'a'.                 |
 |`:g/pattern/normal @q`   |run a macro on matching lines                                      |
 
 ---
 
 ### Copy and paste
 
-| Command| Description                                            |
-| :----- |:-----------------------------------------------------  |
+| Command  | Description                                            |
+| :-----   |:-----------------------------------------------------  |
 |`yy Y`    |yank current line (say "first line").                   |
 |`yiw`     |yank inner word (copy word under cursor, say "first")   |
 |`viwp`    |select "second", then replace it with "first"           |
