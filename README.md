@@ -2,7 +2,7 @@
 
 ### Move horizontally
 
-| Command | Description 
+| Command | Description
 | ------- |:-----------------------------------------------------------------------|
 |0        |beginning of line                                                       |
 |$        |end of line                                                             |
@@ -15,42 +15,35 @@
 
 ### Move cursor
 
-    gg  first line
-
-    G   last line
-
-    nG  n'th line of file (n is a number; 12G moves to line 12)
-
-
-    H   top of screen
-
-    M   middle of screen
-
-    L   bottom of screen
+| Command | Description                                           |
+| ------  |:------------------------------------------------------|
+|gg       |first line                                             |
+|G        |last line                                              |
+|nG       |n'th line of file (n is a number; 12G moves to line 12)|
+|H        |top of screen                                          |
+|M        |middle of screen                                       |
+|L        |bottom of screen                                       |
 
 
 ### Cursor scroll
 
-    z.  cursor to the center of the screen
-
-    zt  cursor to the top
-
-    zb  cursor to the bottom
-
-    Ctrl-O  last (older) cursor position
-
-    Ctrl-I  next cursor position (after Ctrl-O)
+| Command | Description                        |
+| ------- |:-----------------------------------|
+|z.       |cursor to the center of the screen  |
+|zt       |cursor to the top                   |
+|zb       |cursor to the bottom                |
+|Ctrl-O   |last (older) cursor position        |
+|Ctrl-I   |next cursor position (after Ctrl-O) |
 
 
 ### Page scroll
 
-    Ctrl-D  half-page down
-
-    Ctrl-U  half-page up
-
-    Ctrl-B  Page up
-
-    Ctrl-F  Page down
+| Command |  Description     |
+| ------- |:-----------------|
+|Ctrl-D   |  half-page down  |
+|Ctrl-U   |  half-page up    |
+|Ctrl-B   |  Page up         |
+|Ctrl-F   |  Page down       |
 
 
 ### Line scroll
@@ -98,58 +91,47 @@
 
 ### Line ranges
 
-    .       current line        :.w single.txt
-
-    $       last line           :$s/old/new/g
-
-    1       first line          :1s/old/new/g
-
-    1,2     line one to two     :1,2s/old/new/g
+| Command |  Description     | Exemple       |
+| ------- |:-----------------|---------------|
+|.        |current line      |:.w single.txt |
+|$        |last line         |:$s/old/new/g  |
+|1        |first line        |:1s/old/new/g  |
+|1,2      |line one to two   |:1,2s/old/new/g|
 
 
 ### Marker ranges
 
-    :'a,'bd              delete from mark a to mark b, inclusive
-
-    :.,'bd               delete from the current line to mark b, inclusive
-
-    :'a,'bw file.txt     write from mark a to b to file.txt
-
-    :'a,'bw >> file.txt  append from mark a to b to file.txt
+| Command             |  Description                                                |
+| ------------------  |:------------------------------------------------------------|
+|:'a,'bd              |delete from mark a to mark b, inclusive                      |
+|:.,'bd               |delete from the current line to mark b, inclusive            |
+|:'a,'bw file.txt     |write from mark a to b to file.txt                           |
+|:'a,'bw >> file.txt  |append from mark a to b to file.txt                          |
 
 
 ### Command mode
-
-    :ny          copy line number n
-
-    :.tn         copy at line number n
-
-    :1,5tn+      copy range of lines first lines after line n
-
-    :1,5d        delete range of lines
-
-    :3,6m.       move range of lines below cursor
-
-    :6t.         copy line at current line
-
-    :78,83join   join range of lines together
-
-    :earlier 5s  go back in time
+| Command     |  Description                                 |
+| :-----------|:---------------------------------------------|
+|:ny          |copy line number n                            |
+|:.tn         |copy at line number n                         |
+|:1,5tn+      |copy range of lines first lines after line n  |
+|:1,5d        |delete range of lines                         |
+|:3,6m.       |move range of lines below cursor              |
+|:6t.         |copy line at current line                     |
+|:78,83join   |join range of lines together                  |
+|:earlier 5s  |go back in time                               |
 
 
 ### Pattern matching commands
 
-    n   next matching
-
-    N   previous matching
-
-    *   next whole word under cursor
-
-    #   previous whole word under cursor
-
-    g*  next matching search (not whole word) pattern under cursor
-
-    g#  previous matching search (not whole word) pattern under cursor
+| Command  | Description                                                   |
+| :------- | :-----------------------------------------------------------  |
+|n         |next matching                                                  |
+|N         |previous matching                                              |
+|*         |next whole word under cursor                                   |
+|#         |previous whole word under cursor                               |
+|g*        |next matching search (not whole word) pattern under cursor     |
+|g#        |previous matching search (not whole word) pattern under cursor |
 
 
 ### Search commands
