@@ -174,7 +174,7 @@
 
     Vp    Select "second line", then replace it with "first line".
 
-## CUT AND PASTE WITHOUT MOVING
+## Cut and paste without moving
 
     m{char}   Create a marker for a letter
 
