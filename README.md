@@ -92,7 +92,7 @@
 ### Line ranges
 
 | Command |  Description     | Exemple       |
-| ------- |:-----------------|---------------|
+| ------- |:-----------------|:--------------|
 |.        |current line      |:.w single.txt |
 |$        |last line         |:$s/old/new/g  |
 |1        |first line        |:1s/old/new/g  |
@@ -136,25 +136,18 @@
 
 ### Search commands
 
-    :/search/d             search and delete line found
-
-    :/search/y             search and yank line found
-
-    :/search1/,/search2/d  search and delete lines with multiple patterns
-
-    :%s/target/\=@0/g      replace target with what is yanked
-
-    :g/href/d              delete all lines with pattern
-
-    :v/pattern/d           delete all lines that do not match a pattern. The commands shown are equivalent (v is "inverse").
-
-    :g/lines/z#.3          display context (5 lines) for all occurrences of a pattern.
-
-    :g//                   list all the lines where the last search pattern is
-
-    qaq:g/pattern/y A      copy all lines matching a pattern to register 'a'.
-
-    :g/pattern/normal @q   run a macro on matching lines (example assuming a macro recorded as 'q')
+| Command               | Description                                                             |
+| :-------------------- | :--------------------------------------------------------------------   |
+|:/search/d             |search and delete line found                                             |
+|:/search/y             |search and yank line found                                               |
+|:/search1/,/search2/d  |search and delete lines with multiple patterns                           |
+|:%s/target/\=@0/g      |replace target with what is yanked                                       |
+|:g/href/d              |delete all lines with pattern                                            |
+|:v/pattern/d           |delete all lines that do not match a pattern.                            |
+|:g/lines/z#.3          |display context (5 lines) for all occurrences of a pattern.              |
+|:g//                   |list all the lines where the last search pattern is                      |
+|qaq:g/pattern/y A      |copy all lines matching a pattern to register 'a'.                       |
+|:g/pattern/normal @q   |run a macro on matching lines (example assuming a macro recorded as 'q') |
 
 
 ### Copy and paste
