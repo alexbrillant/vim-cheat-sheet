@@ -2,233 +2,231 @@
 
 ## Move horizontally
 
-    0   Move to beginning of line
+    0   beginning of line
 
-    $   Move to end of line
+    $   end of line
 
-    fX FX  To next or previous 'X' after cursor, in the same line (X is any character)
+    fX FX  next or previous 'X' after cursor, in the same line (X is any character)
 
-    tX TX  Til next or previous 'X' (similar to above, but cursor is before X)
+    tX TX  next or previous 'X' (similar to above, but cursor is before X)
 
-    ;   Repeat above, in same direction
+    ;   Repeat same direction
 
-    ,   Repeat above, in reverse direction
+    ,   Repeat reverse direction
 
     %   Jump to matching bracket { } [ ] ( )
 
 ## Move cursor
 
-    gg  Move to first line
+    gg  first line
 
-    G   Move to last line
+    G   last line
 
-    nG  Move to n'th line of file (n is a number; 12G moves to line 12)
+    nG  n'th line of file (n is a number; 12G moves to line 12)
 
 
-    H   Move to top of screen
+    H   top of screen
 
-    M   Move to middle of screen
+    M   middle of screen
 
-    L   Move to bottom of screen
+    L   bottom of screen
 
 ## Scroll
 
-    z.  Scroll the line with the cursor to the center of the screen
+    z.  cursor to the center of the screen
 
-    zt  Scroll the line with the cursor to the top
+    zt  cursor to the top
 
-    zb  Scroll the line with the cursor to the bottom
+    zb  cursor to the bottom
 
 
-    Ctrl-D  Move half-page down
+    Ctrl-D  half-page down
 
-    Ctrl-U  Move half-page up
+    Ctrl-U  half-page up
 
     Ctrl-B  Page up
 
     Ctrl-F  Page down
 
-    Ctrl-O  Jump to last (older) cursor position
+    Ctrl-O  last (older) cursor position
 
-    Ctrl-I  Jump to next cursor position (after Ctrl-O)
+    Ctrl-I  next cursor position (after Ctrl-O)
 
-    Ctrl-Y  Move view pane up
+    Ctrl-Y  view pane up
 
-    Ctrl-E  Move view pane down
+    Ctrl-E  view pane down
 
 ## Avoiding escape key
 
-    Ctrl-c  Escape equivalent
+    Ctrl-c  escape equivalent
 
 ## Visual block
 
-    shiftj shiftJ     Join multiple lines in one line
+    shiftj shiftJ     join lines
 
-    Column + c<char>  Change character in column
+    Column + c<char>  change character in column
 
-    YVR<char>         Replace all the line with a repeated char
-
-
+    YVR<char>         replace all the line with a repeated char
 
 ## Cursor search
 
-    #            Search word under cursor
+    #            word under cursor
 
-    g# g*        Last occurence or first occurence of the word under the cursor
+    g# g*        last occurence or first occurence of the word under the cursor
 
 
 ## Jump to previous locations
 
-    ''           Last cursor position
+    ''           last cursor position
 
-    g; g,        Jump to previous or next edits
+    g; g,        jump to previous or next edits
 
 ## Default ranges
 
-    :s/old/new/g       Changes all old to new in the current line
+    :s/old/new/g       current line
 
-    :11,15s/old/new/g  Changes lines 11 to 15 inclusive
+    :11,15s/old/new/g  11 to 15 inclusive
 
-    :%s/old/new/g      Changes all lines
+    :%s/old/new/g      all lines
 
 ## Line ranges
 
-    .       Current line        :.w single.txt
+    .       current line        :.w single.txt
 
-    $       Last line           :$s/old/new/g
+    $       last line           :$s/old/new/g
 
-    1       First line          :1s/old/new/g
+    1       first line          :1s/old/new/g
 
-    1,2     Line one to two     :1,2s/old/new/g
+    1,2     line one to two     :1,2s/old/new/g
 
 ## Marker ranges
 
-    :'a,'bd              Delete lines from mark a to mark b, inclusive
+    :'a,'bd              delete from mark a to mark b, inclusive
 
-    :.,'bd               Delete lines from the current line to mark b, inclusive
+    :.,'bd               delete from the current line to mark b, inclusive
 
-    :'a,'bw file.txt     Write lines from mark a to b to file.txt
+    :'a,'bw file.txt     write from mark a to b to file.txt
 
-    :'a,'bw >> file.txt  Append lines from mark a to b to file.txt
+    :'a,'bw >> file.txt  append from mark a to b to file.txt
 
 ## Command mode
 
-    :ny          Copy line number n
+    :ny          copy line number n
 
-    :.tn         Copy at line number n
+    :.tn         copy at line number n
 
-    :1,5tn+      Copy range of lines first lines after line n
+    :1,5tn+      copy range of lines first lines after line n
 
-    :1,5d        Delete range of lines
+    :1,5d        delete range of lines
 
-    :3,6m.       Move range of lines below cursor
+    :3,6m.       move range of lines below cursor
 
-    :6t.         Copy line at current line
+    :6t.         copy line at current line
 
-    :78,83join   Join range of lines together
+    :78,83join   join range of lines together
 
-    :earlier 5s  Go back in time
+    :earlier 5s  go back in time
 
 ## Pattern matching commands
 
-    n  Next matching search pattern
+    n   next matching
 
-    N  Previous matching search pattern
+    N   previous matching
 
-    *   Next whole word under cursor
+    *   next whole word under cursor
 
-    #   Previous whole word under cursor
+    #   previous whole word under cursor
 
-    g*  Next matching search (not whole word) pattern under cursor
+    g*  next matching search (not whole word) pattern under cursor
 
-    g#  Previous matching search (not whole word) pattern under cursor
+    g#  previous matching search (not whole word) pattern under cursor
 
 ## Search commands
 
-    :/search/d             Search and delete line found
+    :/search/d             search and delete line found
 
-    :/search/y             Search and yank line found
+    :/search/y             search and yank line found
 
-    :/search1/,/search2/d  Search and delete lines with multiple patterns
+    :/search1/,/search2/d  search and delete lines with multiple patterns
 
-    :%s/target/\=@0/g      Replace target with what is yanked
+    :%s/target/\=@0/g      replace target with what is yanked
 
-    :g/href/d              Delete all lines with pattern
+    :g/href/d              delete all lines with pattern
 
-    :v/pattern/d           Delete all lines that do not match a pattern. The commands shown are equivalent (v is "inverse").
+    :v/pattern/d           delete all lines that do not match a pattern. The commands shown are equivalent (v is "inverse").
 
-    :g/lines/z#.3          Display context (5 lines) for all occurrences of a pattern.
+    :g/lines/z#.3          display context (5 lines) for all occurrences of a pattern.
 
-    :g//                   List all the lines where the last search pattern is
+    :g//                   list all the lines where the last search pattern is
 
-    qaq:g/pattern/y A      Copy all lines matching a pattern to register 'a'.
+    qaq:g/pattern/y A      copy all lines matching a pattern to register 'a'.
 
-    :g/pattern/normal @q   Run a macro on matching lines (example assuming a macro recorded as 'q')
+    :g/pattern/normal @q   run a macro on matching lines (example assuming a macro recorded as 'q')
 
 ## Copy and paste
 
-    yy Y  Yank current line (say "first line").
+    yy Y  yank current line (say "first line").
 
-    yiw   Yank inner word (copy word under cursor, say "first")
+    yiw   yank inner word (copy word under cursor, say "first")
 
-    viwp  Select "second", then replace it with "first"
+    viwp  select "second", then replace it with "first"
 
-    Vp    Select "second line", then replace it with "first line".
+    Vp    select "second line", then replace it with "first line".
 
 ## Cut and paste without moving
 
-    m{char}   Create a marker for a letter
+    m{char}   create a marker for a letter
 
-    '{char}   Jump to the created marker for a letter
+    '{char}   jump to the created marker for a letter
 
-    d'{char}  Cut lines from the following location to the mark
+    d'{char}  cut lines from the following location to the mark
 
-    y'{char}  Yank lines from the following location to the mark
+    y'{char}  yank lines from the following location to the mark
 
 ## Delete, copy and paste in register
 
-    "1p "2p "3p  Paste the n line deleted
+    "1p "2p "3p   paste the n line deleted
 
-    "add          Delete it to register a
+    "add          delete it to register a
 
-    "Add          Delete it to the same register
+    "Add          delete it to the same register
 
-    "Ad           Delete the entire range and append it to the same register
+    "Ad           delete the entire range and append it to the same register
 
-    "ap "aP       Paste the line from register a before of after the cursor
+    "ap "aP       paste the line from register a before of after the cursor
 
-    "+p (or "*p)  Pastes the contents of the clipboard
+    "+p (or "*p)  pastes the contents of the clipboard
 
 ## Moving lines 
 
-    :.m 12    Move current line to after line 12
+    :.m 12    move current line to after line 12
 
-    :5,7m 21  Move lines 5, 6 and 7 to after line 21
+    :5,7m 21  move lines 5, 6 and 7 to after line 21
 
-    :m 'a     Move current line to after line with mark a
+    :m 'a     move current line to after line with mark a
 
-    :m 'a-1   Move current line to before line with mark a
+    :m 'a-1   move current line to before line with mark a
 
 ## Macros
-    qd      Start recording to register d
+    qd      start recording to register d
 
-    ...     Your complex series of commands
+    ...     your complex series of commands
 
-    q       Stop recording
+    q       stop recording
 
-    qA...q  Append to a macro in register A
+    qA...q  append to a macro in register A
 
-    @d      Execute your macro
+    @d      execute your macro
 
-    @@      Execute your macro again
+    @@      execute your macro again
 
 ## View registers
 
-    :reg    View all registers
+    :reg    view all registers
 
-    :reg a  View only what you have recorded into register a
+    :reg a  view only what you have recorded into register a
 
-    qqq     Empties register q
+    qqq     empties register q
 
 ## Recursive macros
 
