@@ -12,7 +12,7 @@
 |`,`        |repeat reverse direction               |
 |`%`        |jump to matching bracket { } [ ] ( )   |
 
----
+
 
 ## Move cursor
 
@@ -31,7 +31,7 @@
 |#           | search word under cursor |
 |g# g*       | search last or first occurence |
 
----
+
 
 ## Scroll
 
@@ -47,7 +47,6 @@
 |`Ctrl-Y`   |view pane up                      |
 |`Ctrl-E`   |view pane down                    |
 
----
 
 
 ## Visual block
@@ -57,7 +56,7 @@
 |`Column + c<char>`  |change character in column               |
 |`YVR<char>`         |replace all the line with a repeated char|
 
----
+
 
 ## Ranges
 
@@ -75,7 +74,7 @@
 |`:'a,'bw file.txt`     |mark a to b to file.txt                           |
 |`:'a,'bw >> file.txt`  |mark a to b to file.txt                          |
 
----
+
 
 ## Command mode
 | Command     |  Description                                 |
@@ -89,7 +88,7 @@
 |`:78,83join`   |join range of lines together                  |
 |`:earlier 5s`  |go back in time                               |
 
----
+
 
 ## Pattern matching commands
 
@@ -102,7 +101,7 @@
 |`g*`        |next matching pattern under cursor     |
 |`g#`        |previous matching pattern under cursor |
 
----
+
 
 ## Search commands
 
@@ -119,7 +118,7 @@
 |`qaq:g/pattern/y A`      |copy lines matching pattern to register 'a'.                 |
 |`:g/pattern/normal @q`   |run a macro on matching lines                                      |
 
----
+
 
 ## Copy and paste
 
@@ -130,7 +129,7 @@
 |`viwp`    |select "second", then replace it with "first"           |
 |`Vp`      |select "second line", then replace it with "first line".|
 
----
+
 
 ## Cut and paste without moving
 
@@ -141,7 +140,7 @@
 |`d'{char}`  |cut lines from the following location to the mark |
 |`y'{char}`  |yank lines from the following location to the mark|
 
----
+
 
 ## Delete, copy and paste in registe
 
@@ -154,7 +153,7 @@
 |`"ap "aP`       | paste the line from register a before of after the cursor                |
 |`"+p (or "*p)`  | pastes the contents of the clipboard                                     |
 
----
+
 
 ## Moving lines
 | Command      | Description                                                             |
@@ -164,7 +163,7 @@
 |`:m 'a`         | move current line to after line with mark a                           |
 |`:m 'a-1`       | move current line to before line with mark a                          |
 
----
+
 
 ## Macros
 
@@ -175,7 +174,7 @@
 |`@d`               |execute macro on register d     |
 |`@@`               |execute macro again             |
 
----
+
 
 ## View registers
 
@@ -185,19 +184,19 @@
 |`:reg a`           |  view only what you have recorded into register a |
 |`qqq`              |  empties register q                               |
 
----
+
 
 ## Recursive macros
 
     qqq qq <commands> @q q record a recursive macro in register q
 
----
+
 
 ## Avoiding escape key
 
     Ctrl-c  escape equivalent
 
----
+
 
 ## Vim script
 
