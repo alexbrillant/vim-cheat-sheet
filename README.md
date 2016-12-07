@@ -37,23 +37,18 @@
 
 | Command | Description                        |
 | ------- |:-----------------------------------|
-|`z.`       |cursor to the center of the screen  |
-|`zt`       |cursor to the top                   |
-|`zb`       |cursor to the bottom                |
-|`Ctrl-D`   |  half-page down  |
-|`Ctrl-U`   |  half-page up    |
-|`Ctrl-B`   |  Page up         |
-|`Ctrl-F`   |  Page down       |
-|`Ctrl-Y`   |view pane up      |
-|`Ctrl-E`   |view pane down    |
+|`z.`       |cursor to the center of the screen|
+|`zt`       |cursor to the top                 |
+|`zb`       |cursor to the bottom              |
+|`Ctrl-D`   |  half-page down                  |
+|`Ctrl-U`   |  half-page up                    |
+|`Ctrl-B`   |  Page up                         |
+|`Ctrl-F`   |  Page down                       |
+|`Ctrl-Y`   |view pane up                      |
+|`Ctrl-E`   |view pane down                    |
 
 ---
 
-### Avoiding escape key
-
-    Ctrl-c  escape equivalent
-
----
 
 ### Visual block
 | Command          |  Description                            |
@@ -195,6 +190,12 @@
 ### Recursive macros
 
     qqq qq <commands> @q q record a recursive macro in register q
+
+---
+
+### Avoiding escape key
+
+    Ctrl-c  escape equivalent
 
 ---
 
