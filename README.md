@@ -174,17 +174,14 @@
 
 ### Delete, copy and paste in register
 
-    "1p "2p "3p   paste the n line deleted
-
-    "add          delete it to register a
-
-    "Add          delete it to the same register
-
-    "Ad           delete the entire range and append it to the same register
-
-    "ap "aP       paste the line from register a before of after the cursor
-
-    "+p (or "*p)  pastes the contents of the clipboard
+| Command      | Description                                                             |
+| :------------| :--------------------------------------------------------------------   |
+|`"1p "2p "3p`   |paste the n line deleted                                                 |
+|`"add`          |delete it to register a                                                  |
+|`"Add`          |delete it to the same register                                           |
+|`"Ad`           |delete the entire range and append it to the same register               |
+|`"ap "aP`       |paste the line from register a before of after the cursor                |
+|`"+p (or "*p)`  |pastes the contents of the clipboard                                     |
 
 
 ### Moving lines 
