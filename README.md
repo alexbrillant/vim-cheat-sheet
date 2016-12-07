@@ -1,6 +1,6 @@
-# *Vim cheat sheet*
+# **Vim cheat sheet**
 
-### *Move horizontally*
+## Move horizontally
 
 | Command | Description
 | ------- |:-------------------------------------   |
@@ -14,7 +14,7 @@
 
 ---
 
-### *Move cursor*
+## Move cursor
 
 | Command   | Description                        |
 | --------- |:-----------------------------------|
@@ -33,7 +33,7 @@
 
 ---
 
-### *Scroll*
+## Scroll
 
 | Command | Description                        |
 | ------- |:-----------------------------------|
@@ -50,7 +50,7 @@
 ---
 
 
-### *Visual block*
+## Visual block
 | Command          |  Description                            |
 | ---------------- |:--------------------------------------  |
 |`shiftj shiftJ`     |join lines                               |
@@ -59,7 +59,7 @@
 
 ---
 
-### *Ranges*
+## Ranges
 
 | Command           |  Description     |
 | ----------------  |:-----------------|
@@ -77,7 +77,7 @@
 
 ---
 
-### *Command mode*
+## Command mode
 | Command     |  Description                                 |
 | :-----------|:---------------------------------------------|
 |`:ny`          |copy line number n                            |
@@ -91,7 +91,7 @@
 
 ---
 
-### *Pattern matching commands*
+## Pattern matching commands
 
 | Command  | Description                                                   |
 | :------- | :-----------------------------------------------------------  |
@@ -104,7 +104,7 @@
 
 ---
 
-### *Search commands*
+## Search commands
 
 | Command               | Description                                                       |
 | :-------------------- | :-----------------------------------------------------------------|
@@ -121,7 +121,7 @@
 
 ---
 
-### *Copy and paste*
+## Copy and paste
 
 | Command  | Description                                            |
 | :-----   |:-----------------------------------------------------  |
@@ -132,7 +132,7 @@
 
 ---
 
-### *Cut and paste without moving*
+## Cut and paste without moving
 
 | Command  | Description                                      |
 | :--------| :----------------------------------------------- |
@@ -143,7 +143,7 @@
 
 ---
 
-### *Delete, copy and paste in registe*
+## Delete, copy and paste in registe
 
 | Command      | Description                                                             |
 | :------------| :--------------------------------------------------------------------   |
@@ -156,7 +156,7 @@
 
 ---
 
-### *Moving lines *
+## Moving lines
 | Command      | Description                                                             |
 | :------------| :--------------------------------------------------------------------   |
 |`:.m 12`        | move current line to after line 12                                    |
@@ -166,7 +166,7 @@
 
 ---
 
-### *Macros*
+## Macros
 
 | Command         | Description                    |
 | :-------------  | :------------------------------|
@@ -177,7 +177,7 @@
 
 ---
 
-### *View registers*
+## View registers
 
 | Command         | Description                                       |
 | :-------------  | :-----------------------------------------------  |
@@ -187,18 +187,18 @@
 
 ---
 
-### *Recursive macros*
+## Recursive macros
 
     qqq qq <commands> @q q record a recursive macro in register q
 
 ---
 
-### *Avoiding escape key*
+## Avoiding escape key
 
     Ctrl-c  escape equivalent
 
 ---
 
-### *Vim script*
+## Vim script
 
 http://ricostacruz.com/cheatsheets/vimscript.html
