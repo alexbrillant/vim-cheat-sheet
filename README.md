@@ -1,6 +1,6 @@
 # *Vim cheat sheet*
 
-## Move horizontally
+### Move horizontally
 
     0   Move to beginning of line
 
@@ -19,7 +19,7 @@
     %   Jump to matching bracket { } [ ] ( )
 
 
-## Move cursor
+### Move cursor
 
     gg  Move to first line
 
@@ -35,7 +35,7 @@
     L   Move to bottom of screen
 
 
-## Scroll
+### Scroll
 
     z.  Scroll the line with the cursor to the center of the screen
 
@@ -61,12 +61,12 @@
     Ctrl-E  Move view pane down
 
 
-## Avoiding escape key
+### Avoiding escape key
 
     Ctrl-c  Escape equivalent
 
 
-## Visual block
+### Visual block
 
     shiftj shiftJ     Join multiple lines in one line
 
@@ -75,21 +75,21 @@
     YVR<char>         Replace all the line with a repeated char
 
 
-## Cursor search
+### Cursor search
 
     #            Search word under cursor
 
     g# g*        Last occurence or first occurence of the word under the cursor
 
 
-## Jump to previous locations
+### Jump to previous locations
 
     ''           Last cursor position
 
     g; g,        Jump to previous or next edits
 
 
-## Default ranges
+### Default ranges
 
     :s/old/new/g       Changes all old to new in the current line
 
@@ -98,7 +98,7 @@
     :%s/old/new/g      Changes all lines
 
 
-## Line ranges
+### Line ranges
 
     .       Current line        :.w single.txt
 
@@ -109,7 +109,7 @@
     1,2     Line one to two     :1,2s/old/new/g
 
 
-## Marker ranges
+### Marker ranges
 
     :'a,'bd              Delete lines from mark a to mark b, inclusive
 
@@ -120,7 +120,7 @@
     :'a,'bw >> file.txt  Append lines from mark a to b to file.txt
 
 
-## Command mode
+### Command mode
 
     :ny          Copy line number n
 
@@ -139,7 +139,7 @@
     :earlier 5s  Go back in time
 
 
-## Pattern matching commands
+### Pattern matching commands
 
     n  Next matching search pattern
 
@@ -154,7 +154,7 @@
     g#  Previous matching search (not whole word) pattern under cursor
 
 
-## Search commands
+### Search commands
 
     :/search/d             Search and delete line found
 
@@ -177,7 +177,7 @@
     :g/pattern/normal @q   Run a macro on matching lines (example assuming a macro recorded as 'q')
 
 
-## Copy and paste
+### Copy and paste
 
     yy Y  Yank current line (say "first line").
 
@@ -188,7 +188,7 @@
     Vp    Select "second line", then replace it with "first line".
 
 
-## Cut and paste without moving
+### Cut and paste without moving
 
     m{char}   Create a marker for a letter
 
@@ -199,7 +199,7 @@
     y'{char}  Yank lines from the following location to the mark
 
 
-## Delete, copy and paste in register
+### Delete, copy and paste in register
 
     "1p "2p "3p  Paste the n line deleted
 
@@ -214,7 +214,7 @@
     "+p (or "*p)  Pastes the contents of the clipboard
 
 
-## Moving lines 
+### Moving lines 
 
     :.m 12    Move current line to after line 12
 
@@ -225,7 +225,7 @@
     :m 'a-1   Move current line to before line with mark a
 
 
-## Macros
+### Macros
     qd      Start recording to register d
 
     ...     Your complex series of commands
@@ -239,7 +239,7 @@
     @@      Execute your macro again
 
 
-## View registers
+### View registers
 
     :reg    View all registers
 
@@ -248,10 +248,10 @@
     qqq     Empties register q
 
 
-## Recursive macros
+### Recursive macros
 
     qqq qq <commands> @q q record a recursive macro in register q
 
-## Vim script
+### Vim script
 
 http://ricostacruz.com/cheatsheets/vimscript.html
