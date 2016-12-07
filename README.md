@@ -74,29 +74,17 @@
     g; g,        jump to previous or next edits
 
 
-### Default ranges
+### Ranges
 
 | Command           |  Description     |
 | ----------------  |:-----------------|
 |`:s/old/new/g`       |current line      |
 |`:11,15s/old/new/g`  |11 to 15 inclusive|
 |`:%s/old/new/g`      |all lines         |
-
-
-### Line ranges
-
-| Command |  Description     | Exemple       |
-| ------- |:-----------------|:--------------|
 |`.`        |current line      |:.w single.txt |
 |`$`        |last line         |:$s/old/new/g  |
 |`1`        |first line        |:1s/old/new/g  |
 |`1,2`      |line one to two   |:1,2s/old/new/g|
-
-
-### Marker ranges
-
-| Command             |  Description                                                |
-| ------------------  |:------------------------------------------------------------|
 |`:'a,'bd`              |delete from mark a to mark b, inclusive                      |
 |`:.,'bd`               |delete from the current line to mark b, inclusive            |
 |`:'a,'bw file.txt`     |write from mark a to b to file.txt                           |
