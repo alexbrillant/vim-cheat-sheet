@@ -152,24 +152,22 @@
 
 ### Copy and paste
 
-    yy Y  yank current line (say "first line").
-
-    yiw   yank inner word (copy word under cursor, say "first")
-
-    viwp  select "second", then replace it with "first"
-
-    Vp    select "second line", then replace it with "first line".
+| Command| Description                                            |
+| :----- |:-----------------------------------------------------  |
+|`yy Y`    |yank current line (say "first line").                   |
+|`yiw`     |yank inner word (copy word under cursor, say "first")   |
+|`viwp`    |select "second", then replace it with "first"           |
+|`Vp`      |select "second line", then replace it with "first line".|
 
 
 ### Cut and paste without moving
 
-    m{char}   create a marker for a letter
-
-    '{char}   jump to the created marker for a letter
-
-    d'{char}  cut lines from the following location to the mark
-
-    y'{char}  yank lines from the following location to the mark
+| Command  | Description                                      |
+| :--------| :----------------------------------------------- |
+|`m{char}`   |create a marker for a letter                      |
+|`'{char}`   |jump to the created marker for a letter           |
+|`d'{char}`  |cut lines from the following location to the mark |
+|`y'{char}`  |yank lines from the following location to the mark|
 
 
 ### Delete, copy and paste in register
@@ -195,22 +193,21 @@
 
 ### Macros
 
-    qd <commands> q  record a macro to register d
-
-    qA...q           append to a macro in register A
-
-    @d               execute macro on register d
-
-    @@               execute macro again
+| Command         | Description                    |
+| :-------------  | :------------------------------|
+|`qd <commands> q`  |record a macro to register d    |
+|`qA...q`           |append to a macro in register A |
+|`@d`               |execute macro on register d     |
+|`@@`               |execute macro again             |
 
 
 ### View registers
 
-    :reg    view all registers
-
-    :reg a  view only what you have recorded into register a
-
-    qqq     empties register q
+| Command         | Description                                       |
+| :-------------  | :-----------------------------------------------  |
+|`:reg`             |  view all registers                               |
+|`:reg a`           |  view only what you have recorded into register a |
+|`qqq`              |  empties register q                               |
 
 
 ### Recursive macros
