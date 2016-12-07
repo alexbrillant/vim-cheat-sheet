@@ -10,11 +10,11 @@
 
     tX TX  next or previous 'X' (similar to above, but cursor is before X)
 
-    ;   Repeat same direction
+    ;   repeat same direction
 
-    ,   Repeat reverse direction
+    ,   repeat reverse direction
 
-    %   Jump to matching bracket { } [ ] ( )
+    %   jump to matching bracket { } [ ] ( )
 
 
 ### Move cursor
@@ -222,29 +222,15 @@
     :m 'a-1   move current line to before line with mark a
 
 
-## Macros
-
-    qd      start recording to register d
-
-    ...     your complex series of commands
-
-    q       stop recording
-
-    qA...q  append to a macro in register A
-
-    @d      execute your macro
-
-    @@      execute your macro again
-
-
 ### Macros
-    qd <commands> q  Record a macro to register d
 
-    qA...q           Append to a macro in register A
+    qd <commands> q  record a macro to register d
 
-    @d               Execute macro on register d
+    qA...q           append to a macro in register A
 
-    @@               Execute the last macro executed
+    @d               execute macro on register d
+
+    @@               execute macro again
 
 
 ### View registers
