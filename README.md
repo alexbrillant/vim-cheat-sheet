@@ -29,7 +29,7 @@
 |''         |  last cursor position              |
 |g; g,      |  jump to previous or next edits    |
 |#           | search word under cursor |
-|g# g*       | search last or first occurence of word under cursor |
+|g# g*       | search last or first occurence |
 
 ---
 
