@@ -38,19 +38,14 @@
 
 ### Page scroll
 
-| Command |  Description     |
-| ------- |:-----------------|
+| Command   |  Description     |
+| --------- |:-----------------|
 |`Ctrl-D`   |  half-page down  |
 |`Ctrl-U`   |  half-page up    |
 |`Ctrl-B`   |  Page up         |
 |`Ctrl-F`   |  Page down       |
-
-
-### Line scroll
-
-    Ctrl-Y  view pane up
-
-    Ctrl-E  view pane down
+|`Ctrl-Y`   |view pane up      |
+|`Ctrl-E`   |view pane down    |
 
 
 ### Avoiding escape key
@@ -59,12 +54,11 @@
 
 
 ### Visual block
-
-    shiftj shiftJ     join lines
-
-    Column + c<char>  change character in column
-
-    YVR<char>         replace all the line with a repeated char
+| Command          |  Description                            |
+| ---------------- |:--------------------------------------  |
+|`shiftj shiftJ`     |join lines                               |
+|`Column + c<char>`  |change character in column               |
+|`YVR<char>`         |replace all the line with a repeated char|
 
 ### Cursor search
 
@@ -82,11 +76,11 @@
 
 ### Default ranges
 
-    :s/old/new/g       current line
-
-    :11,15s/old/new/g  11 to 15 inclusive
-
-    :%s/old/new/g      all lines
+| Command           |  Description     |
+| ----------------  |:-----------------|
+|`:s/old/new/g`       |current line      |
+|`:11,15s/old/new/g`  |11 to 15 inclusive|
+|`:%s/old/new/g`      |all lines         |
 
 
 ### Line ranges
