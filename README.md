@@ -24,6 +24,8 @@
 |`H`        |top of screen                                          |
 |`M`        |middle of screen                                       |
 |`L`        |bottom of screen                                       |
+|`Ctrl-O`   |last (older) cursor position        |
+|`Ctrl-I`   |next cursor position (after Ctrl-O) |
 
 ---
 
@@ -34,8 +36,6 @@
 |`z.`       |cursor to the center of the screen  |
 |`zt`       |cursor to the top                   |
 |`zb`       |cursor to the bottom                |
-|`Ctrl-O`   |last (older) cursor position        |
-|`Ctrl-I`   |next cursor position (after Ctrl-O) |
 |`Ctrl-D`   |  half-page down  |
 |`Ctrl-U`   |  half-page up    |
 |`Ctrl-B`   |  Page up         |
