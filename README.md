@@ -3,31 +3,31 @@
 ### Move horizontally
 
 | Command | Description
-| ------- |:-----------------------------------------------------------------------|
-|`0`        |beginning of line                                                       |
-|`$`        |end of line                                                             |
-|`fa Fa`    |next or previous 'a' after cursor, in the same line (a is any character)|
-|`ta Ta`    |next or previous 'a' (similar to above, but cursor is before a)         |
-|`;`        |repeat same direction                                                   |
-|`,`        |repeat reverse direction                                                |
-|`%`       |jump to matching bracket { } [ ] ( )                                    |
+| ------- |:-------------------------------------|
+|`0`        |beginning of line                   |
+|`$`        |end of line                         |
+|`fa Fa`    |next or previous 'a' after cursor   |
+|`ta Ta`    |next or previous 'a'                |
+|`;`        |repeat same direction               |
+|`,`        |repeat reverse direction            |
+|`%`        |jump to matching bracket { } [ ] ( ) |
 
 ---
 
 ### Move cursor
 
-| Command   | Description                                           |
-| --------- |:------------------------------------------------------|
-|`gg`       |first line                                             |
-|`G`        |last line                                              |
-|`nG`       |n'th line of file (n is a number; 12G moves to line 12)|
-|`H`        |top of screen                                          |
-|`M`        |middle of screen                                       |
-|`L`        |bottom of screen                                       |
+| Command   | Description                        |
+| --------- |:-----------------------------------|
+|`gg`       |first line                          |
+|`G`        |last line                           |
+|`nG`       |n'th line of file                   |
+|`H`        |top of screen                       |
+|`M`        |middle of screen                    |
+|`L`        |bottom of screen                    |
 |`Ctrl-O`   |last (older) cursor position        |
 |`Ctrl-I`   |next cursor position (after Ctrl-O) |
-|''         |  last cursor position   |
-|g; g,      |  jump to previous or next edits |
+|''         |  last cursor position              |
+|g; g,      |  jump to previous or next edits    |
 
 ---
 
