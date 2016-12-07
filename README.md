@@ -3,14 +3,14 @@
 ### Move horizontally
 
 | Command | Description
-| ------- |:-------------------------------------|
-|`0`        |beginning of line                   |
-|`$`        |end of line                         |
-|`fa Fa`    |next or previous 'a' after cursor   |
-|`ta Ta`    |next or previous 'a'                |
-|`;`        |repeat same direction               |
-|`,`        |repeat reverse direction            |
-|`%`        |jump to matching bracket { } [ ] ( ) |
+| ------- |:-------------------------------------   |
+|`0`        |beginning of line                      |
+|`$`        |end of line                            |
+|`fa Fa`    |next or previous 'a' after cursor      |
+|`ta Ta`    |next or previous 'a'                   |
+|`;`        |repeat same direction                  |
+|`,`        |repeat reverse direction               |
+|`%`        |jump to matching bracket { } [ ] ( )   |
 
 ---
 
