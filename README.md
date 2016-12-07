@@ -76,7 +76,7 @@
     g; g,             Jump to previous or next edits
     
 
-    \#           Search word under cursor
+    #            Search word under cursor
 
     g# g*        Last occurence or first occurence of the word under the cursor
 
