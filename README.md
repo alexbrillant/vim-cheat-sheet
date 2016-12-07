@@ -226,17 +226,13 @@
 
 
 ### Macros
-    qd      Start recording to register d
+    qd <commands> q  Record a macro to register d
 
-    ...     Your complex series of commands
+    qA...q           Append to a macro in register A
 
-    q       Stop recording
+    @d               Execute macro on register d
 
-    qA...q  Append to a macro in register A
-
-    @d      Execute your macro
-
-    @@      Execute your macro again
+    @@               Execute the last macro executed
 
 
 ### View registers
