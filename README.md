@@ -1,20 +1,14 @@
 # *Vim cheat sheet*
 
 ### Move horizontally
-
-    0   beginning of line
-
-    $   end of line
-
-    fX FX  next or previous 'X' after cursor, in the same line (X is any character)
-
-    tX TX  next or previous 'X' (similar to above, but cursor is before X)
-
-    ;   repeat same direction
-
-    ,   repeat reverse direction
-
-    %   jump to matching bracket { } [ ] ( )
+|-------|------------------------------------------------------------------------|
+|0      |beginning of line                                                       |
+|$      |end of line                                                             |
+|fX FX  |next or previous 'X' after cursor, in the same line (X is any character)|
+|tX TX  |next or previous 'X' (similar to above, but cursor is before X)         |
+|;      |repeat same direction                                                   |
+|,      |repeat reverse direction                                                |
+|%      |jump to matching bracket { } [ ] ( )                                    |
 
 
 ### Move cursor
