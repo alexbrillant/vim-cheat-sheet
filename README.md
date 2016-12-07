@@ -25,7 +25,7 @@
 |`L`        |bottom of screen                                       |
 
 
-### Cursor scroll
+### Scroll
 
 | Command | Description                        |
 | ------- |:-----------------------------------|
