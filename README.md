@@ -26,6 +26,8 @@
 |`L`        |bottom of screen                                       |
 |`Ctrl-O`   |last (older) cursor position        |
 |`Ctrl-I`   |next cursor position (after Ctrl-O) |
+|''         |  last cursor position   |
+|g; g,      |  jump to previous or next edits |
 
 ---
 
@@ -65,14 +67,6 @@
     #            word under cursor
 
     g# g*        last occurence or first occurence of the word under the cursor
-
----
-
-### Jump to previous locations
-
-    ''           last cursor position
-
-    g; g,        jump to previous or next edits
 
 ---
 
