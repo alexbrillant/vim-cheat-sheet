@@ -1,20 +1,14 @@
-# vim-cheat-sheet
+# *Vim cheat sheet*
 
 ## Move horizontally
 
     0   Move to beginning of line
 
-    _   Move to first non-blank character of the line
+    $   Move to end of line
 
-    g_  Move to last non-blank character of the line
+    fX FX  To next or previous 'X' after cursor, in the same line (X is any character)
 
-    fX  To next 'X' after cursor, in the same line (X is any character)
-
-    FX  To previous 'X' before cursor (f and F put the cursor on X)
-
-    tX  Til next 'X' (similar to above, but cursor is before X)
-
-    TX  Til previous 'X'
+    tX TX  Til next or previous 'X' (similar to above, but cursor is before X)
 
     ;   Repeat above, in same direction
 
@@ -22,7 +16,7 @@
 
     %   Jump to matching bracket { } [ ] ( )
 
-## Move vertically
+## Move cursor
 
     gg  Move to first line
 
@@ -37,6 +31,7 @@
 
     L   Move to bottom of screen
 
+## Scroll
 
     z.  Scroll the line with the cursor to the center of the screen
 
@@ -61,7 +56,7 @@
 
     Ctrl-E  Move view pane down
 
-## Avoiding escape key 
+## Avoiding escape key
 
     Ctrl-c  Escape equivalent
 
@@ -73,19 +68,22 @@
 
     YVR<char>         Replace all the line with a repeated char
 
-    g; g,             Jump to previous or next edits
-    
+
+
+## Cursor search
 
     #            Search word under cursor
 
     g# g*        Last occurence or first occurence of the word under the cursor
 
+
+## Jump to previous locations
+
     ''           Last cursor position
 
-    "1p "2p "3p  Paste the n line deleted
-    
+    g; g,        Jump to previous or next edits
 
-## Ranges
+## Default ranges
 
     :s/old/new/g       Changes all old to new in the current line
 
@@ -93,6 +91,7 @@
 
     :%s/old/new/g      Changes all lines
 
+## Line ranges
 
     .       Current line        :.w single.txt
 
@@ -102,6 +101,7 @@
 
     1,2     Line one to two     :1,2s/old/new/g
 
+## Marker ranges
 
     :'a,'bd              Delete lines from mark a to mark b, inclusive
 
@@ -111,7 +111,7 @@
 
     :'a,'bw >> file.txt  Append lines from mark a to b to file.txt
 
-## Command mode 
+## Command mode
 
     :ny          Copy line number n
 
@@ -137,11 +137,13 @@
 
     *   Next whole word under cursor
 
-    \#   Previous whole word under cursor
+    #   Previous whole word under cursor
 
     g*  Next matching search (not whole word) pattern under cursor
 
     g#  Previous matching search (not whole word) pattern under cursor
+
+## Search commands
 
     :/search/d             Search and delete line found
 
@@ -150,7 +152,6 @@
     :/search1/,/search2/d  Search and delete lines with multiple patterns
 
     :%s/target/\=@0/g      Replace target with what is yanked
-
 
     :g/href/d              Delete all lines with pattern
 
@@ -186,6 +187,8 @@
 
 ## Delete, copy and paste in register
 
+    "1p "2p "3p  Paste the n line deleted
+
     "add          Delete it to register a
 
     "Add          Delete it to the same register
@@ -219,12 +222,15 @@
 
     @@      Execute your macro again
 
+## View registers
 
     :reg    View all registers
 
     :reg a  View only what you have recorded into register a
 
     qqq     Empties register q
+
+## Recursive macros
 
     qqq qq <commands> @q q record a recursive macro in register q
 
