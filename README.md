@@ -33,7 +33,7 @@
     L   bottom of screen
 
 
-### Scroll
+### Cursor scroll
 
     z.  cursor to the center of the screen
 
@@ -41,6 +41,12 @@
 
     zb  cursor to the bottom
 
+    Ctrl-O  last (older) cursor position
+
+    Ctrl-I  next cursor position (after Ctrl-O)
+
+
+### Page scroll
 
     Ctrl-D  half-page down
 
@@ -50,9 +56,8 @@
 
     Ctrl-F  Page down
 
-    Ctrl-O  last (older) cursor position
 
-    Ctrl-I  next cursor position (after Ctrl-O)
+### Line scroll
 
     Ctrl-Y  view pane up
 
