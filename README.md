@@ -28,6 +28,8 @@
 |`Ctrl-I`   |next cursor position  |
 |''         |  last cursor position              |
 |g; g,      |  jump to previous or next edits    |
+|#           | search word under cursor |
+|g# g*       | search last or first occurence of word under cursor |
 
 ---
 
@@ -62,14 +64,6 @@
 
 ---
 
-### Cursor search
-
-    #            word under cursor
-
-    g# g*        last occurence or first occurence of the word under the cursor
-
----
-
 ### Ranges
 
 | Command           |  Description     |
@@ -81,10 +75,10 @@
 |`$`        |last line         |:$s/old/new/g  |
 |`1`        |first line        |:1s/old/new/g  |
 |`1,2`      |line one to two   |:1,2s/old/new/g|
-|`:'a,'bd`              |delete from mark a to mark b, inclusive                      |
-|`:.,'bd`               |delete from the current line to mark b, inclusive            |
-|`:'a,'bw file.txt`     |write from mark a to b to file.txt                           |
-|`:'a,'bw >> file.txt`  |append from mark a to b to file.txt                          |
+|`:'a,'bd`              |mark a to mark b, inclusive                      |
+|`:.,'bd`               |current line to mark b, inclusive            |
+|`:'a,'bw file.txt`     |mark a to b to file.txt                           |
+|`:'a,'bw >> file.txt`  |mark a to b to file.txt                          |
 
 ---
 
