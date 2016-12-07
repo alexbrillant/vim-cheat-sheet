@@ -24,8 +24,8 @@
 |`H`        |top of screen                       |
 |`M`        |middle of screen                    |
 |`L`        |bottom of screen                    |
-|`Ctrl-O`   |last (older) cursor position        |
-|`Ctrl-I`   |next cursor position (after Ctrl-O) |
+|`Ctrl-O`   |last  cursor position        |
+|`Ctrl-I`   |next cursor position  |
 |''         |  last cursor position              |
 |g; g,      |  jump to previous or next edits    |
 
