@@ -5,16 +5,19 @@
     0   Move to beginning of line
 
     $   Move to end of line
+    
 
     fX FX  To next or previous 'X' after cursor, in the same line (X is any character)
 
     tX TX  Til next or previous 'X' (similar to above, but cursor is before X)
+    
 
     ;   Repeat above, in same direction
 
     ,   Repeat above, in reverse direction
 
     %   Jump to matching bracket { } [ ] ( )
+
 
 ## Move cursor
 
@@ -30,6 +33,7 @@
     M   Move to middle of screen
 
     L   Move to bottom of screen
+
 
 ## Scroll
 
@@ -56,9 +60,11 @@
 
     Ctrl-E  Move view pane down
 
+
 ## Avoiding escape key
 
     Ctrl-c  Escape equivalent
+
 
 ## Visual block
 
@@ -67,7 +73,6 @@
     Column + c<char>  Change character in column
 
     YVR<char>         Replace all the line with a repeated char
-
 
 
 ## Cursor search
@@ -83,6 +88,7 @@
 
     g; g,        Jump to previous or next edits
 
+
 ## Default ranges
 
     :s/old/new/g       Changes all old to new in the current line
@@ -90,6 +96,7 @@
     :11,15s/old/new/g  Changes lines 11 to 15 inclusive
 
     :%s/old/new/g      Changes all lines
+
 
 ## Line ranges
 
@@ -101,6 +108,7 @@
 
     1,2     Line one to two     :1,2s/old/new/g
 
+
 ## Marker ranges
 
     :'a,'bd              Delete lines from mark a to mark b, inclusive
@@ -110,6 +118,7 @@
     :'a,'bw file.txt     Write lines from mark a to b to file.txt
 
     :'a,'bw >> file.txt  Append lines from mark a to b to file.txt
+
 
 ## Command mode
 
@@ -129,6 +138,7 @@
 
     :earlier 5s  Go back in time
 
+
 ## Pattern matching commands
 
     n  Next matching search pattern
@@ -142,6 +152,7 @@
     g*  Next matching search (not whole word) pattern under cursor
 
     g#  Previous matching search (not whole word) pattern under cursor
+
 
 ## Search commands
 
@@ -165,6 +176,7 @@
 
     :g/pattern/normal @q   Run a macro on matching lines (example assuming a macro recorded as 'q')
 
+
 ## Copy and paste
 
     yy Y  Yank current line (say "first line").
@@ -175,6 +187,7 @@
 
     Vp    Select "second line", then replace it with "first line".
 
+
 ## Cut and paste without moving
 
     m{char}   Create a marker for a letter
@@ -184,6 +197,7 @@
     d'{char}  Cut lines from the following location to the mark
 
     y'{char}  Yank lines from the following location to the mark
+
 
 ## Delete, copy and paste in register
 
@@ -199,6 +213,7 @@
 
     "+p (or "*p)  Pastes the contents of the clipboard
 
+
 ## Moving lines 
 
     :.m 12    Move current line to after line 12
@@ -208,6 +223,7 @@
     :m 'a     Move current line to after line with mark a
 
     :m 'a-1   Move current line to before line with mark a
+
 
 ## Macros
     qd      Start recording to register d
@@ -222,6 +238,7 @@
 
     @@      Execute your macro again
 
+
 ## View registers
 
     :reg    View all registers
@@ -229,6 +246,7 @@
     :reg a  View only what you have recorded into register a
 
     qqq     Empties register q
+
 
 ## Recursive macros
 
