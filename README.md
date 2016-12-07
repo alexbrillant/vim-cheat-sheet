@@ -99,8 +99,8 @@
 |`N`         |previous matching                                              |
 |`*`         |next whole word under cursor                                   |
 |`#`         |previous whole word under cursor                               |
-|`g*`        |next matching search (not whole word) pattern under cursor     |
-|`g#`        |previous matching search (not whole word) pattern under cursor |
+|`g*`        |next matching pattern under cursor     |
+|`g#`        |previous matching pattern under cursor |
 
 ---
 
