@@ -34,12 +34,6 @@
 |`zb`       |cursor to the bottom                |
 |`Ctrl-O`   |last (older) cursor position        |
 |`Ctrl-I`   |next cursor position (after Ctrl-O) |
-
-
-### Page scroll
-
-| Command   |  Description     |
-| --------- |:-----------------|
 |`Ctrl-D`   |  half-page down  |
 |`Ctrl-U`   |  half-page up    |
 |`Ctrl-B`   |  Page up         |
