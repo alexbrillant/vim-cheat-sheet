@@ -12,6 +12,7 @@
 |`,`        |repeat reverse direction                                                |
 |`%`       |jump to matching bracket { } [ ] ( )                                    |
 
+---
 
 ### Move cursor
 
@@ -24,6 +25,7 @@
 |`M`        |middle of screen                                       |
 |`L`        |bottom of screen                                       |
 
+---
 
 ### Scroll
 
