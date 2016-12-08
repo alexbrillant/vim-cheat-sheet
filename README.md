@@ -55,6 +55,7 @@
 |`shiftj shiftJ`     |join lines                               |
 |`Column + c<char>`  |change character in column               |
 |`YVR<char>`         |replace all the line with a repeated char|
+|> <                 |shift right or left                      |
 
 
 
@@ -124,7 +125,8 @@
 
 | Command  | Description                                            |
 | :-----   |:-----------------------------------------------------  |
-|`yy Y`    |yank current line (say "first line").                   |
+|`yy`      |yank current line (say "first line").                   |
+|`Y`       |yank line from current position to the end              |
 |`yiw`     |yank inner word (copy word under cursor, say "first")   |
 |`viwp`    |select "second", then replace it with "first"           |
 |`Vp`      |select "second line", then replace it with "first line".|
@@ -170,7 +172,7 @@
 | Command         | Description                    |
 | :-------------  | :------------------------------|
 |`qd <commands> q`  |record a macro to register d    |
-|`qA...q`           |append to a macro in register A |
+|`qA <commands> q`           |append to a macro in register A |
 |`@d`               |execute macro on register d     |
 |`@@`               |execute macro again             |
 
