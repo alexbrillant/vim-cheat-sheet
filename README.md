@@ -17,9 +17,6 @@
 |`%`        |jump to matching bracket { } [ ] ( )   |
 
 
-## Undo redo
-
-`u Ctrl`
 
 ## Move cursor
 
@@ -84,6 +81,9 @@
 |`:'a,'b`     |mark a to b to |
 
 
+## Undo redo
+
+`u Ctrl`
 
 ## Command mode
 | Command     |  Description                                 |
