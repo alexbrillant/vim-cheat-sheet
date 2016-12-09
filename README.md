@@ -76,7 +76,7 @@
 |`:11,15s/old/new/g`  |11 to 15 inclusive|
 |`:%s/old/new/g`      |all lines         |
 |`.`        |current line      |:.w single.txt |
-|`+n -n [n(1 by default]`        |n line after or before current line      |:.w single.txt |
+|`+n -n [n(1 by default)]`        |n line after or before current line      |:.w single.txt |
 |`$`        |last line         |:$s/old/new/g  |
 |`1`        |first line        |:1s/old/new/g  |
 |`1,2`      |line one to two   |:1,2s/old/new/g|
