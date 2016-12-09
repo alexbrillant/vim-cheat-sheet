@@ -81,7 +81,7 @@
 |`1,2`      |line one to two   |:1,2s/old/new/g|
 |`:'a,'b`              |mark a to mark b, inclusive                      |
 |`:.,'b`               |current line to mark b, inclusive            |
-|`:'a,'b`     |mark a to b to file.txt                           |
+|`:'a,'b`     |mark a to b to |
 
 
 
