@@ -64,7 +64,7 @@
 |`shiftj shiftJ`     |join lines                               |
 |`Column + c<char>`  |change character in column               |
 |`YVR<char>`         |replace all the line with a repeated char|
-|> <                 |shift right or left                      |
+|`> <`                |shift right or left                      |
 
 
 
@@ -76,13 +76,13 @@
 |`:11,15s/old/new/g`  |11 to 15 inclusive|
 |`:%s/old/new/g`      |all lines         |
 |`.`        |current line      |:.w single.txt |
+|`+n -n [n(1 by default]`        |n line after or before current line      |:.w single.txt |
 |`$`        |last line         |:$s/old/new/g  |
 |`1`        |first line        |:1s/old/new/g  |
 |`1,2`      |line one to two   |:1,2s/old/new/g|
-|`:'a,'bd`              |mark a to mark b, inclusive                      |
-|`:.,'bd`               |current line to mark b, inclusive            |
-|`:'a,'bw file.txt`     |mark a to b to file.txt                           |
-|`:'a,'bw >> file.txt`  |mark a to b to file.txt                          |
+|`:'a,'b`              |mark a to mark b, inclusive                      |
+|`:.,'b`               |current line to mark b, inclusive            |
+|`:'a,'b`     |mark a to b to file.txt                           |
 
 
 
