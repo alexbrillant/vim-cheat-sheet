@@ -6,13 +6,20 @@
 | ------- |:-------------------------------------   |
 |`0`        |beginning of line                      |
 |`$`        |end of line                            |
-|`fa Fa`    |next or previous 'a' after cursor      |
+|`w W`        |next word or WORD |
+|`e E`        |next word or WORD |
+|`b B`        |previous word or WORD beginning |
+|`( )`        |beginning of previous or next sentence|
+|`{ }`        |beginning of previous or next paragraph|
+|`f[char] F[char]`    |next or previous occurence of char after cursor |
 |`ta Ta`    |next or previous 'a'                   |
-|`;`        |repeat same direction                  |
-|`,`        |repeat reverse direction               |
+|`; ,`        |repeat `f,F,t,T` in different direction |
 |`%`        |jump to matching bracket { } [ ] ( )   |
 
 
+## Undo redo
+
+`u Ctrl`
 
 ## Move cursor
 
@@ -20,17 +27,19 @@
 | --------- |:-----------------------------------|
 |`gg`       |first line                          |
 |`G`        |last line                           |
+|`nG :n`    |jump to line n                  |
 |`nG`       |n'th line of file                   |
 |`H`        |top of screen                       |
 |`M`        |middle of screen                    |
 |`L`        |bottom of screen                    |
+|`[[ ]]`        |nex or previous function |
 |`Ctrl-O`   |last  cursor position        |
 |`Ctrl-I`   |next cursor position  |
-|''         |  last cursor position              |
-|g; g,      |  jump to previous or next edits    |
-|#           | search word under cursor |
-|g# g*       | search last or first occurence |
-
+|`' '`         |  last cursor position              |
+|`g; g,`      |  jump to previous or next edits    |
+|`#`          | search word under cursor |
+|`g# g*`      | search last or first occurence |
+|`g; g,`      |  jump to previous or next edits    |
 
 
 ## Scroll
@@ -95,12 +104,9 @@
 
 | Command  | Description                                                   |
 | :------- | :-----------------------------------------------------------  |
-|`n`         |next matching                                                  |
-|`N`         |previous matching                                              |
-|`*`         |next whole word under cursor                                   |
-|`#`         |previous whole word under cursor                               |
-|`g*`        |next matching pattern under cursor     |
-|`g#`        |previous matching pattern under cursor |
+|`/target ?target`         |Search next or previous target |
+|`n N`         |next or previous matching                                                  |
+|`* #`         |next or previous whole word under cursor                                   |
 
 
 
@@ -143,48 +149,59 @@
 |`y'{char}`  |yank lines from the following location to the mark|
 
 
+## Delete 
+
+
+| Command  | Description                                      |
+| :--------| :----------------------------------------------- |
+| `D` | Delete till the end of the line |
+| `dd` | Delete the whole ine |
+| `dt[char]` | Delete till next char |
+| `dw` | Delete word |
+| `d} d)` | Delete from current to next sentence or paragraph |
+| `di{ di( da{ da(` | Delete everything inside or around sentence or paragraph |
 
 ## Delete, copy and paste in registe
 
-| Command      | Description                                                             |
-| :------------| :--------------------------------------------------------------------   |
-|`"1p "2p "3p`   | paste the n line deleted                                                 |
-|`"add`          | delete it to register a                                                  |
-|`"Add`          | delete it to the same register                                           |
-|`"Ad`           | delete the entire range and append it to the same register               |
-|`"ap "aP`       | paste the line from register a before of after the cursor                |
-|`"+p (or "*p)`  | pastes the contents of the clipboard                                     |
+        | Command      | Description                                                             |
+        | :------------| :--------------------------------------------------------------------   |
+        |`"1p "2p "3p`   | paste the n line deleted                                                 |
+        |`"add`          | delete it to register a                                                  |
+        |`"Add`          | delete it to the same register                                           |
+        |`"Ad`           | delete the entire range and append it to the same register               |
+        |`"ap "aP`       | paste the line from register a before of after the cursor                |
+        |`"+p (or "*p)`  | pastes the contents of the clipboard                                     |
 
 
 
 ## Moving lines
-| Command      | Description                                                             |
-| :------------| :--------------------------------------------------------------------   |
-|`:.m 12`        | move current line to after line 12                                    |
-|`:5,7m 21`      | move lines 5, 6 and 7 to after line 21                                |
-|`:m 'a`         | move current line to after line with mark a                           |
-|`:m 'a-1`       | move current line to before line with mark a                          |
+    | Command      | Description                                                             |
+    | :------------| :--------------------------------------------------------------------   |
+    |`:.m 12`        | move current line to after line 12                                    |
+    |`:5,7m 21`      | move lines 5, 6 and 7 to after line 21                                |
+    |`:m 'a`         | move current line to after line with mark a                           |
+    |`:m 'a-1`       | move current line to before line with mark a                          |
 
 
 
 ## Macros
 
-| Command         | Description                    |
-| :-------------  | :------------------------------|
-|`qd <commands> q`  |record a macro to register d    |
-|`qA <commands> q`           |append to a macro in register A |
-|`@d`               |execute macro on register d     |
-|`@@`               |execute macro again             |
+    | Command         | Description                    |
+    | :-------------  | :------------------------------|
+    |`qd <commands> q`  |record a macro to register d    |
+    |`qA <commands> q`           |append to a macro in register A |
+    |`@d`               |execute macro on register d     |
+    |`@@`               |execute macro again             |
 
 
 
 ## View registers
 
-| Command         | Description                                       |
-| :-------------  | :-----------------------------------------------  |
-|`:reg`             |  view all registers                               |
-|`:reg a`           |  view only what you have recorded into register a |
-|`qqq`              |  empties register q                               |
+    | Command         | Description                                       |
+    | :-------------  | :-----------------------------------------------  |
+    |`:reg`             |  view all registers                               |
+    |`:reg a`           |  view only what you have recorded into register a |
+    |`qqq`              |  empties register q                               |
 
 
 
@@ -202,4 +219,4 @@
 
 ## Vim script
 
-http://ricostacruz.com/cheatsheets/vimscript.html
+    http://ricostacruz.com/cheatsheets/vimscript.html
