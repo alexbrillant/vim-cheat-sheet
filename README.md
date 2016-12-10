@@ -34,6 +34,7 @@
 | Command   | Description                        |
 | --------- |:-----------------------------------|
 |`gg`       |first line                          |
+|'.       | jump to last modification line |
 |`G`        |last line                           |
 |`nG :n`    |jump to line n                  |
 |`nG`       |n'th line of file                   |
@@ -196,7 +197,12 @@ Delete stays in normal mode after deleting.
 |`:m 'a`         | move current line to after line with mark a                           |
 |`:m 'a-1`       | move current line to before line with mark a                          |
 
-
+## Editing text
+|u     | lowercase selection|
+|U     | uppercase selection|
+|guu     | lowercase line|
+|gUU     | uppercase line|
+|CTRL-A,CTRL-X | increment, decrement next number on same line as the cursor|
 
 ## Macros
 
