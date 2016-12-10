@@ -201,11 +201,11 @@ Delete stays in normal mode after deleting.
 
 | Command      | Description                                                             |
 | :------------| :--------------------------------------------------------------------   |
-|u     | lowercase selection|
-|U     | uppercase selection|
-|guu     | lowercase line|
-|gUU     | uppercase line|
-|CTRL-A,CTRL-X | increment, decrement next number on same line as the cursor|
+|`u`     | lowercase selection|
+|`U`     | uppercase selection|
+|`guu`     | lowercase line|
+|`gUU`     | uppercase line|
+|`CTRL-A,CTRL-X` | increment, decrement next number on same line as the cursor|
 
 ## Macros
 
