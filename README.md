@@ -88,6 +88,7 @@
 ## Command mode
 | Command     |  Description                                 |
 | :-----------|:---------------------------------------------|
+|`:![shell command]`          | execute any command in the shell |
 |`:ny`          |copy line number n                            |
 |`:.tn`         |copy at line number n                         |
 |`:1,5tn+`      |copy range of lines first lines after line n  |
@@ -147,19 +148,20 @@
 |`d'{char}`  |cut lines from the following location to the mark |
 |`y'{char}`  |yank lines from the following location to the mark|
 
+## Delete and change
 
-## Delete 
-
+Change enters insert mode after deleting
+Delete stays in normal mode after deleting.
 
 | Command  | Description                                      |
 | :--------| :----------------------------------------------- |
-| `D` | Delete till the end of the line |
-| `dd` | Delete the whole ine |
-| `dnG` | Delete from current position to line n |
-| `dt[char]` | Delete till next char |
-| `dw` | Delete word |
-| `d} d)` | Delete from current to next sentence or paragraph |
-| `di{ di( da{ da(` | Delete everything inside or around sentence or paragraph |
+| `D C` | Delete till the end of the line |
+| `dd cc` | Delete the whole ine |
+| `dnG cnG` | Delete from current position to line n |
+| `dt[char] ct[char]` | Delete till next char |
+| `dw cw` | Delete word |
+| `d} d) c} c)` | Delete from current to next sentence or paragraph |
+| `di{ di( da{ da( ci{ ci( ca{ ca(` | Delete everything inside or around sentence or paragraph |
 
 ## Delete, copy and paste in registe
 
