@@ -198,6 +198,9 @@ Delete stays in normal mode after deleting.
 |`:m 'a-1`       | move current line to before line with mark a                          |
 
 ## Editing text
+
+| Command      | Description                                                             |
+| :------------| :--------------------------------------------------------------------   |
 |u     | lowercase selection|
 |U     | uppercase selection|
 |guu     | lowercase line|
