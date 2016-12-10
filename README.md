@@ -155,6 +155,7 @@
 | :--------| :----------------------------------------------- |
 | `D` | Delete till the end of the line |
 | `dd` | Delete the whole ine |
+| `dnG` | Delete from current position to line n |
 | `dt[char]` | Delete till next char |
 | `dw` | Delete word |
 | `d} d)` | Delete from current to next sentence or paragraph |
@@ -164,12 +165,12 @@
 
 | Command      | Description                                                             |
 | :------------| :--------------------------------------------------------------------   |
-|`"1p "2p "3p`   | paste the n line deleted                                                 |
-|`"add`          | delete it to register a                                                  |
-|`"Add`          | delete it to the same register                                           |
+|`"np "ny `   | paste or yank the n line deleted        |
+|`"[register]dd`          | delete it to register       |
+|`"Add`          | delete it to the same register       |
 |`"Ad`           | delete the entire range and append it to the same register               |
-|`"ap "aP`       | paste the line from register a before of after the cursor                |
-|`"+p (or "*p)`  | pastes the contents of the clipboard                                     |
+|`"[register]p "[register]P`       | paste the line from register a before of after the cursor                |
+|`"+p (or "*p)`  | pastes the contents of the clipboard |
 
 
 
@@ -188,9 +189,9 @@
 
 | Command         | Description                    |
 | :-------------  | :------------------------------|
-|`qd <commands> q`  |record a macro to register d    |
+|`q[register] <commands> q`  |record a macro to register     |
 |`qA <commands> q`           |append to a macro in register A |
-|`@d`               |execute macro on register d     |
+|`@[register]`               |execute macro on register      |
 |`@@`               |execute macro again             |
 
 
@@ -200,7 +201,7 @@
 | Command         | Description                                       |
 | :-------------  | :-----------------------------------------------  |
 |`:reg`             |  view all registers                               |
-|`:reg a`           |  view only what you have recorded into register a |
+|`:reg [register]`           |  view only what you have recorded into register  |
 |`qqq`              |  empties register q                               |
 
 
