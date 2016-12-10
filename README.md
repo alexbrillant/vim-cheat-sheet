@@ -150,7 +150,7 @@
 
 ## Delete and change
 
-Change enters insert mode after deleting
+Change enters insert mode after deleting.
 Delete stays in normal mode after deleting.
 
 | Command  | Description                                      |
