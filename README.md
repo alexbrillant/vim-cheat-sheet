@@ -1,5 +1,16 @@
 # **Vim cheat sheet**
 
+## Files
+
+| Command | Description
+| ------- |:-------------------------------------   |
+|:wq         | write and quit|
+|:x          | write and quit|
+|:w filename | write a copy of the file you are editing as filename|
+|:q!         | quit without saving even if changes were made!|
+|:help       | display help|
+|<Tab>       | use tab completion to scroll through commands that start with what you typed|
+
 ## Move horizontally
 
 | Command | Description
