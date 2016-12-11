@@ -231,7 +231,7 @@ Delete stays in normal mode after deleting.
 
 | Command         | Description                                       |
 | :-------------  | :-----------------------------------------------  |
-|`manual`|manually define folds|
+|`:set foldmethod=manual`|manually define folds|
 |`zf{motion} {Visual}zf`| create a fold. |
 |`zF`| create a fold for [count] lines |
 |`:{range}fo[ld]`| create a fold for {range} |
