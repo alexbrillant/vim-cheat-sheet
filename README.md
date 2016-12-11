@@ -68,6 +68,7 @@
 
 
 ## Visual block
+
 | Command          |  Description                            |
 | ---------------- |:--------------------------------------  |
 |`shiftj shiftJ`     |join lines                               |
@@ -206,6 +207,11 @@ Delete stays in normal mode after deleting.
 |`guu`     | lowercase line|
 |`gUU`     | uppercase line|
 |`CTRL-A,CTRL-X` | increment, decrement next number on same line as the cursor|
+|`CTRL-W`| messed up a word |
+|`CTRL-U`| messed up a line |
+|`CTRL-O D`| delete line in insert mode |
+
+
 
 ## Macros
 
