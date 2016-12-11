@@ -226,6 +226,31 @@ Delete stays in normal mode after deleting.
 |`:reg [register]`           |  view only what you have recorded into register  |
 |`qqq`              |  empties register q                               |
 
+## Folding
+
+
+| Command         | Description                                       |
+| :-------------  | :-----------------------------------------------  |
+|`manual`|manually define folds|
+|`zf{motion} {Visual}zf`| create a fold. |
+|`zF`| create a fold for [count] lines |
+|`:{range}fo[ld]`| create a fold for {range} |
+|`zd`|delete one fold at the cursor.|
+|`zD`|delete folds recursively |
+|`zE`|eliminate all folds in the window. |
+|`zo zO`|open fold recursively or not|
+|`zc zC`|close one fold under the cursor recursively or not.|
+|`za zA`|open or close recursively or not|
+|`zv`|view cursor line|
+|`zm zM`|fold more: Subtract one from 'foldlevel'.  |
+|`zr zR`|reduce folding: Add one to 'foldlevel'.|
+|`:{range}foldo[pen][!]` |open folds in {range}.  [!] all folds are|
+|`:{range}foldc[lose][!]`|close folds in {range}. [!] all folds |
+|`zn zN`| all folds will be open.|
+|`zi`|invert 'foldenable'.|
+|`[z ]z`|move to the start or the end of the current open fold.|
+|`zj zk`|move downwards or upwards |
+
 
 
 ## Recursive macros
