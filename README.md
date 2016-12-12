@@ -4,8 +4,7 @@
 
 | Command | Description
 | ------- |:-------------------------------------   |
-|`:wq`         | write and quit|
-|`:x`          | write and quit|
+|`:wq :x`         | write and quit|
 |`:w filename` | write a copy of the file you are editing as filename|
 |`:q!`         | quit without saving even if changes were made!|
 |`:help`       | display help|
@@ -18,7 +17,7 @@
 |`0`        |beginning of line                      |
 |`$`        |end of line                            |
 |`w W`        |next word or WORD |
-|`e E`        |next word or WORD |
+|`e E`        |next or previous end of  word or WORD |
 |`b B`        |previous word or WORD  |
 |`( )`        |beginning of previous or next sentence|
 |`{ }`        |beginning of previous or next paragraph|
