@@ -14,8 +14,7 @@
 
 | Command | Description
 | ------- |:-------------------------------------   |
-|`0`        |beginning of line                      |
-|`$`        |end of line                            |
+|`0 $`        |beginning or end of line |
 |`w W`        |next word or WORD |
 |`e E`        |next or previous end of  word or WORD |
 |`b B`        |previous word or WORD  |
@@ -28,7 +27,7 @@
 
 
 
-## Move cursor
+## Move vertically
 
 | Command   | Description                        |
 | --------- |:-----------------------------------|
@@ -37,13 +36,10 @@
 |`G`        |last line                           |
 |`nG :n`    |jump to line n                  |
 |`nG`       |n'th line of file                   |
-|`H`        |top of screen                       |
-|`M`        |middle of screen                    |
-|`L`        |bottom of screen                    |
+|`H M L`        |top, middle or low of screen                       |
 |`[[ ]]`        |nex or previous function |
-|`Ctrl-O`   |last  cursor position        |
+|`Ctrl-O ' '`   |last  cursor position        |
 |`Ctrl-I`   |next cursor position  |
-|`' '`         |  last cursor position              |
 |`g; g,`      |  jump to previous or next edits    |
 |`#`          | search word under cursor |
 |`g# g*`      | search last or first occurence |
@@ -54,15 +50,10 @@
 
 | Command | Description                        |
 | ------- |:-----------------------------------|
-|`z.`       |cursor to the center of the screen|
-|`zt`       |cursor to the top                 |
-|`zb`       |cursor to the bottom              |
-|`Ctrl-D`   |  half-page down                  |
-|`Ctrl-U`   |  half-page up                    |
-|`Ctrl-B`   |  Page up                         |
-|`Ctrl-F`   |  Page down                       |
-|`Ctrl-Y`   |view pane up                      |
-|`Ctrl-E`   |view pane down                    |
+|`z. zt zb`       |cursor to the center, top or bottom of the screen|
+|`Ctrl-U Ctrl-D`   |  half-page up or down     |
+|`Ctrl-B Ctrl F`   |  Page up or down          |
+|`Ctrl-Y Ctrl-E`   |view pane up or down       |
 
 
 
@@ -201,10 +192,8 @@ Delete stays in normal mode after deleting.
 
 | Command      | Description                                                             |
 | :------------| :--------------------------------------------------------------------   |
-|`u`     | lowercase selection|
-|`U`     | uppercase selection|
-|`guu`     | lowercase line|
-|`gUU`     | uppercase line|
+|`u U`     | lowercase or upercase selection|
+|`guu gUU`     | lowercase or upercase line|
 |`CTRL-A,CTRL-X` | increment, decrement next number on same line as the cursor|
 |`CTRL-W`| messed up a word |
 |`CTRL-U`| messed up a line |
