@@ -101,16 +101,18 @@
 ## Special marks
 | Command         | Description                    |
 | :-------------  | :------------------------------|
-|`. 	|jump to position where last change occurred in current buffer|
-|`" 	|jump to position where last exited current buffer|
-|`0 	|jump to position in last file edited (when exited Vim)|
-|`1 	|like `0 but the previous file (also `2 etc)|
-|'' 	|jump back (to line in current buffer where jumped from)|
-|`` 	|jump back (to position in current buffer where jumped from)|
-|`[ or `] 	|jump to beginning/end of previously changed or yanked text|
-|`< or `> 	|jump to beginning/end of last visual selection|
+|``.`	|jump to position where last change occurred in current buffer|
+|``"` 	|jump to position where last exited current buffer|
+|``0` 	|jump to position in last file edited (when exited Vim)|
+|``1` 	|like `0 but the previous file (also `2 etc)|
+|`''` 	|jump back (to line in current buffer where jumped from)|
+|```` 	|jump back (to position in current buffer where jumped from)|
+|``[ or `]` 	|jump to beginning/end of previously changed or yanked text|
+|``< or `>` 	|jump to beginning/end of last visual selection|
 
 ## Normal range 
+| Command         | Description                    |
+| :-------------  | :------------------------------|
 |:'<,'>       |for every line in the visual block(press : while in visual mode)|
 |g/^/         |on every line that matches the regex /^/ - i.e. every line|
 |norm         |run in normal mode|
