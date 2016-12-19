@@ -10,6 +10,7 @@
 |`:help`       | display help|
 |`<Tab>`       | use tab completion to scroll through commands that start with what you typed|
 
+
 ## Move horizontally
 
 | Command | Description
@@ -37,11 +38,11 @@
 |`nG :n`    |jump to line n                  |
 |`nG`       |n'th line of file                   |
 |`H M L`        |top, middle or low of screen                       |
-|`[[ ]]`        |nex or previous function |
+|`[[ ]]`        |nex or previous function  |
 |`Ctrl-O ' '`   |last  cursor position        |
 |`Ctrl-I`   |next cursor position  |
 |`g; g,`      |  jump to previous or next edits    |
-|`#`          | search word under cursor |
+|`#`          | search word under cursor   |
 |`g# g*`      | search last or first occurence |
 |`g; g,`      |  jump to previous or next edits    |
 
@@ -82,6 +83,36 @@
 |`:'a,'b`              |mark a to mark b, inclusive                      |
 |`:.,'b`               |current line to mark b, inclusive            |
 |`:'a,'b`     |mark a to b to |
+
+## Marks 
+|ma 	|set mark a at current cursor location|
+|'a 	|jump to line of mark a (first non-blank character in line)|
+|`a 	|jump to position (line and column) of mark a|
+|d'a 	|delete from current line to line of mark a|
+|d`a 	|delete from current cursor position to position of mark a|
+|c'a 	|change text from current line to line of mark a|
+|y`a 	|yank text to unnamed buffer from cursor to position of mark a|
+|:marks 	|list all the current marks|
+|:marks |aB 	list marks a, B|
+
+
+## Special marks
+|`. 	|jump to position where last change occurred in current buffer|
+|`" 	|jump to position where last exited current buffer|
+|`0 	|jump to position in last file edited (when exited Vim)|
+|`1 	|like `0 but the previous file (also `2 etc)|
+|'' 	|jump back (to line in current buffer where jumped from)|
+|`` 	|jump back (to position in current buffer where jumped from)|
+|`[ or `] 	|jump to beginning/end of previously changed or yanked text|
+|`< or `> 	|jump to beginning/end of last visual selection|
+
+## Normal range 
+| Command         | Description                    |
+| :-------------  | :------------------------------|
+|:'<,'>       |for every line in the visual block(press : while in visual mode)|
+|g/^/         |on every line that matches the regex /^/ - i.e. every line|
+|norm         |run in normal mode|
+|@a           |the macro recorded in a|
 
 
 ## Undo redo
@@ -141,7 +172,6 @@
 |`Vp`      |select "second line", then replace it with "first line".|
 
 
-
 ## Cut and paste without moving
 
 | Command  | Description                                      |
@@ -166,7 +196,7 @@ Delete stays in normal mode after deleting.
 | `d} d) c} c)` | Delete from current to next sentence or paragraph |
 | `di{ di( da{ da( ci{ ci( ca{ ca(` | Delete everything inside or around sentence or paragraph |
 
-## Delete, copy and paste in registe
+## Delete, copy and paste in register
 
 | Command      | Description                                                             |
 | :------------| :--------------------------------------------------------------------   |
@@ -199,8 +229,6 @@ Delete stays in normal mode after deleting.
 |`CTRL-U`| messed up a line |
 |`CTRL-O D`| delete line in insert mode |
 
-
-
 ## Macros
 
 | Command         | Description                    |
@@ -209,8 +237,6 @@ Delete stays in normal mode after deleting.
 |`qA <commands> q`           |append to a macro in register A |
 |`@[register]`               |execute macro on register      |
 |`@@`               |execute macro again             |
-
-
 
 ## View registers
 
