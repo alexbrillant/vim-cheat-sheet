@@ -85,6 +85,8 @@
 |`:'a,'b`     |mark a to b to |
 
 ## Marks 
+| Command         | Description                    |
+| :-------------  | :------------------------------|
 |ma 	|set mark a at current cursor location|
 |'a 	|jump to line of mark a (first non-blank character in line)|
 |`a 	|jump to position (line and column) of mark a|
@@ -97,6 +99,8 @@
 
 
 ## Special marks
+| Command         | Description                    |
+| :-------------  | :------------------------------|
 |`. 	|jump to position where last change occurred in current buffer|
 |`" 	|jump to position where last exited current buffer|
 |`0 	|jump to position in last file edited (when exited Vim)|
@@ -107,8 +111,6 @@
 |`< or `> 	|jump to beginning/end of last visual selection|
 
 ## Normal range 
-| Command         | Description                    |
-| :-------------  | :------------------------------|
 |:'<,'>       |for every line in the visual block(press : while in visual mode)|
 |g/^/         |on every line that matches the regex /^/ - i.e. every line|
 |norm         |run in normal mode|
