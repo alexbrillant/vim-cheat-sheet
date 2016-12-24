@@ -192,13 +192,13 @@ Delete stays in normal mode after deleting.
 
 | Command  | Description                                      |
 | :--------| :----------------------------------------------- |
-| D C | Delete till the end of the line |
-| dd cc | Delete the whole ine |
-| dnG cnG | Delete from current position to line n |
-| dt[char] ct[char] | Delete till next char |
-| dw cw | Delete word |
-| d} d) c} c) | Delete from current to next sentence or paragraph |
-| di{ di( da{ da( ci{ ci( ca{ ca( | Delete everything inside or around sentence or paragraph |
+| D C | delete or change till the end of the line |
+| dd cc | delete or change the whole ine |
+| dnG cnG | delete or change from current position to line n |
+| dt[char] ct[char] | delete or change till next char |
+| dw cw | delete or change word |
+| d} d) c} c) | delete or change from current to next sentence or paragraph |
+| di{ di( da{ da( ci{ ci( ca{ ca( | delete or change everything inside or around sentence or paragraph |
 
 ## Delete, copy and paste in register
 
