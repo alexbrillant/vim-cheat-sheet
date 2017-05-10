@@ -17,12 +17,14 @@
 | ------- |:-------------------------------------   |
 |0 $        |beginning or end of line |
 |w W        |next word or WORD |
+|I         |edit before the first word on the line |
+|A         |edit after the last word on the line |
 |e E        |next or previous end of  word or WORD |
 |b B        |previous word or WORD  |
 |( )        |beginning of previous or next sentence|
 |{ }        |beginning of previous or next paragraph|
-|f[char] F[char]    |next or previous occurence of char after cursor |
-|ta Ta    |next or previous 'a'                   |
+|f[char] F[char]    |put the cursor at the next or previous occurence of char |
+|t[char] T[char]    |put the cursor right before the next or previous char occurence                   |
 |; ,        |repeat `f,F,t,T` in different direction |
 |%        |jump to matching bracket { } [ ] ( )   |
 
@@ -56,7 +58,38 @@
 |Ctrl-B Ctrl F   |  Page up or down          |
 |Ctrl-Y Ctrl-E   |view pane up or down       |
 
+## Delete, copy and paste in register
 
+| Command      | Description                                                             |
+| :------------| :--------------------------------------------------------------------   |
+|"np "ny    | paste or yank the n line deleted        |
+|"[register]dd          | delete it to register       |
+|"Add          | delete it to the same register       |
+|"Ad           | delete the entire range and append it to the same register               |
+|"[register]p "[register]P       | paste the line from register a before of after the cursor                |
+|"+p (or "*p)  | pastes the contents of the clipboard |
+
+
+
+## Moving lines
+
+| Command      | Description                                                             |
+| :------------| :--------------------------------------------------------------------   |
+|:.m 12        | move current line to after line 12                                    |
+|:5,7m 21      | move lines 5, 6 and 7 to after line 21                                |
+|:m 'a         | move current line to after line with mark a                           |
+|:m 'a-1       | move current line to before line with mark a                          |
+
+## Editing text
+
+| Command      | Description                                                             |
+| :------------| :--------------------------------------------------------------------   |
+|u U     | lowercase or upercase selection|
+|guu gUU     | lowercase or upercase line|
+|CTRL-A,CTRL-X | increment, decrement next number on same line as the cursor|
+|CTRL-W| messed up a word |
+|CTRL-U| messed up a line |
+|CTRL-O D| delete line in insert mode |
 
 ## Visual block
 
@@ -199,39 +232,6 @@ Delete stays in normal mode after deleting.
 | dw cw | Delete word |
 | d} d) c} c) | Delete from current to next sentence or paragraph |
 | di{ di( da{ da( ci{ ci( ca{ ca( | Delete everything inside or around sentence or paragraph |
-
-## Delete, copy and paste in register
-
-| Command      | Description                                                             |
-| :------------| :--------------------------------------------------------------------   |
-|"np "ny    | paste or yank the n line deleted        |
-|"[register]dd          | delete it to register       |
-|"Add          | delete it to the same register       |
-|"Ad           | delete the entire range and append it to the same register               |
-|"[register]p "[register]P       | paste the line from register a before of after the cursor                |
-|"+p (or "*p)  | pastes the contents of the clipboard |
-
-
-
-## Moving lines
-
-| Command      | Description                                                             |
-| :------------| :--------------------------------------------------------------------   |
-|:.m 12        | move current line to after line 12                                    |
-|:5,7m 21      | move lines 5, 6 and 7 to after line 21                                |
-|:m 'a         | move current line to after line with mark a                           |
-|:m 'a-1       | move current line to before line with mark a                          |
-
-## Editing text
-
-| Command      | Description                                                             |
-| :------------| :--------------------------------------------------------------------   |
-|u U     | lowercase or upercase selection|
-|guu gUU     | lowercase or upercase line|
-|CTRL-A,CTRL-X | increment, decrement next number on same line as the cursor|
-|CTRL-W| messed up a word |
-|CTRL-U| messed up a line |
-|CTRL-O D| delete line in insert mode |
 
 ## Macros
 
