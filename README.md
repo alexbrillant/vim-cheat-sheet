@@ -86,7 +86,7 @@ Delete stays in normal mode after deleting.
 | Command  | Description                                      |
 | :--------| :----------------------------------------------- |
 | D C | delete or change till the end of the line |
-| dd cc | delete or change the whole ine |
+| dd cc | delete or change the whole line |
 | dnG cnG | delete or change from current position to line n |
 | dt[char] ct[char] | delete or change till next char |
 | dw cw | delete or change word |
@@ -117,6 +117,7 @@ Delete stays in normal mode after deleting.
 
 | Command      | Description                                                             |
 | :------------| :--------------------------------------------------------------------   |
+|R| enter replace mode |
 |u U     | lowercase or upercase selection|
 |guu gUU     | lowercase or upercase line|
 |CTRL-A,CTRL-X | increment, decrement next number on same line as the cursor|
