@@ -58,6 +58,41 @@
 |Ctrl-B Ctrl F   |  Page up or down          |
 |Ctrl-Y Ctrl-E   |view pane up or down       |
 
+
+## Copy and paste
+
+| Command  | Description                                            |
+| :-----   |:-----------------------------------------------------  |
+|yy      |yank current line (say "first line").                   |
+|Y       |yank line from current position to the end              |
+|yiw     |yank inner word (copy word under cursor, say "first")   |
+|viwp    |select "second", then replace it with "first"           |
+|Vp      |select "second line", then replace it with "first line".|
+
+## Cut and paste without moving
+
+| Command  | Description                                      |
+| :--------| :----------------------------------------------- |
+|m{char}   |create a marker for a letter                      |
+|'{char}   |jump to the created marker for a letter           |
+|d'{char}  |cut lines from the following location to the mark |
+|y'{char}  |yank lines from the following location to the mark|
+
+## Delete and change
+
+Change enters insert mode after deleting.
+Delete stays in normal mode after deleting.
+
+| Command  | Description                                      |
+| :--------| :----------------------------------------------- |
+| D C | delete or change till the end of the line |
+| dd cc | delete or change the whole ine |
+| dnG cnG | delete or change from current position to line n |
+| dt[char] ct[char] | delete or change till next char |
+| dw cw | delete or change word |
+| d} d) c} c) | delete or change from current to next sentence or paragraph |
+| di{ di( da{ da( ci{ ci( ca{ ca( | delete or change everything inside or around sentence or paragraph |
+
 ## Delete, copy and paste in register
 
 | Command      | Description                                                             |
@@ -68,8 +103,6 @@
 |"Ad           | delete the entire range and append it to the same register               |
 |"[register]p "[register]P       | paste the line from register a before of after the cursor                |
 |"+p (or "*p)  | pastes the contents of the clipboard |
-
-
 
 ## Moving lines
 
@@ -197,41 +230,6 @@
 |:g/pattern/normal @q   |run a macro on matching lines                                      |
 
 
-
-## Copy and paste
-
-| Command  | Description                                            |
-| :-----   |:-----------------------------------------------------  |
-|yy      |yank current line (say "first line").                   |
-|Y       |yank line from current position to the end              |
-|yiw     |yank inner word (copy word under cursor, say "first")   |
-|viwp    |select "second", then replace it with "first"           |
-|Vp      |select "second line", then replace it with "first line".|
-
-
-## Cut and paste without moving
-
-| Command  | Description                                      |
-| :--------| :----------------------------------------------- |
-|m{char}   |create a marker for a letter                      |
-|'{char}   |jump to the created marker for a letter           |
-|d'{char}  |cut lines from the following location to the mark |
-|y'{char}  |yank lines from the following location to the mark|
-
-## Delete and change
-
-Change enters insert mode after deleting.
-Delete stays in normal mode after deleting.
-
-| Command  | Description                                      |
-| :--------| :----------------------------------------------- |
-| D C | delete or change till the end of the line |
-| dd cc | delete or change the whole ine |
-| dnG cnG | delete or change from current position to line n |
-| dt[char] ct[char] | delete or change till next char |
-| dw cw | delete or change word |
-| d} d) c} c) | delete or change from current to next sentence or paragraph |
-| di{ di( da{ da( ci{ ci( ca{ ca( | delete or change everything inside or around sentence or paragraph |
 
 ## Macros
 
