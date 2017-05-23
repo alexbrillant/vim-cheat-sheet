@@ -28,8 +28,6 @@
 |; ,        |repeat `f,F,t,T` in different direction |
 |%        |jump to matching bracket { } [ ] ( )   |
 
-
-
 ## Move vertically
 
 | Command   | Description                        |
@@ -66,8 +64,9 @@
 |yy      |yank current line (say "first line").                   |
 |Y       |yank line from current position to the end              |
 |yiw     |yank inner word (copy word under cursor, say "first")   |
-|viwp    |select "second", then replace it with "first"           |
-|Vp      |select "second line", then replace it with "first line".|
+|viwp    |select "second", then replace it with what is yanked           |
+|Vp      |select current line", then replace it with yanked line.|
+| y{number}{h j k l}| yank with movement |
 
 ## Cut and paste without moving
 
@@ -78,7 +77,7 @@
 |d'{char}  |cut lines from the following location to the mark |
 |y'{char}  |yank lines from the following location to the mark|
 
-## Delete and change
+## Substitude
 
 Change enters insert mode after deleting.
 Delete stays in normal mode after deleting.
@@ -86,7 +85,7 @@ Delete stays in normal mode after deleting.
 | Command  | Description                                      |
 | :--------| :----------------------------------------------- |
 | D C | delete or change till the end of the line |
-| dd cc | delete or change the whole line |
+| cc S | delete all text on line and start inserting in it's place |
 | dnG cnG | delete or change from current position to line n |
 | dt[char] ct[char] | delete or change till next char |
 | dw cw | delete or change word |
