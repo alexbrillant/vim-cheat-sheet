@@ -10,7 +10,6 @@
 |:help       | display help|
 |`<Tab>`       | use tab completion to scroll through commands that start with what you typed|
 
-
 ## Move horizontally
 
 | Command | Description
@@ -42,10 +41,9 @@
 |Ctrl-O ' '   |last  cursor position        |
 |Ctrl-I   |next cursor position  |
 |g; g,      |  jump to previous or next edits    |
-|#          | search word under cursor   |
+|#  *        | search word under cursor   |
 |g# g*      | search last or first occurence |
 |g; g,      |  jump to previous or next edits    |
-
 
 ## Scroll
 
@@ -68,14 +66,6 @@
 |Vp      |select current line", then replace it with yanked line.|
 | y{number}{h j k l}| yank with movement |
 
-## Cut and paste without moving
-
-| Command  | Description                                      |
-| :--------| :----------------------------------------------- |
-|m{char}   |create a marker for a letter                      |
-|'{char}   |jump to the created marker for a letter           |
-|d'{char}  |cut lines from the following location to the mark |
-|y'{char}  |yank lines from the following location to the mark|
 
 ## Substitude
 
@@ -133,8 +123,6 @@ Delete stays in normal mode after deleting.
 |YVR<char>         |replace all the line with a repeated char|
 |> <                |shift right or left                      |
 
-
-
 ## Ranges
 
 | Command           |  Description     |
@@ -151,6 +139,7 @@ Delete stays in normal mode after deleting.
 |:'a,'b     |mark a to b to |
 
 ## Marks 
+
 | Command         | Description                    |
 | :-------------  | :------------------------------|
 |ma 	|set mark a at current cursor location|
@@ -162,9 +151,13 @@ Delete stays in normal mode after deleting.
 |y`a 	|yank text to unnamed buffer from cursor to position of mark a|
 |:marks 	|list all the current marks|
 |:marks |aB 	list marks a, B|
-
+|m{char}   |create a marker for a letter                      |
+|'{char}   |jump to the created marker for a letter           |
+|d'{char}  |cut lines from the following location to the mark |
+|y'{char}  |yank lines from the following location to the mark|
 
 ## Special marks
+
 | Command         | Description                    |
 | :-------------  | :------------------------------|
 |`.	|jump to position where last change occurred in current buffer|
@@ -282,8 +275,6 @@ Delete stays in normal mode after deleting.
 ## Avoiding escape key
 
     Ctrl-c  escape equivalent
-
-
 
 ## Vim script
 
