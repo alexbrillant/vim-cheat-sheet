@@ -123,20 +123,42 @@ Delete stays in normal mode after deleting.
 |YVR<char>         |replace all the line with a repeated char|
 |> <                |shift right or left                      |
 
-## Ranges
+## Ranges 
 
-| Command           |  Description     |
-| ----------------  |:-----------------|
-|:s/old/new/g       |current line      |
-|:11,15s/old/new/g  |11 to 15 inclusive|
-|:%s/old/new/g      |all lines         |
-|.        |current line      |:.w single.txt |
-|+n -n [n(1 by default)]        |n line after or before current line      |:.w single.txt |
-|1 $        |first line and last line         |:$s/old/new/g  |
-|1,2      |line one to two   |:1,2s/old/new/g|
+| Command          |  Description                            |
+| ---------------- |:--------------------------------------  |
+|.| The current line |
+|$ | last line in the document|
+|% |All lines; equivalent to 1,$ |
+|7,$ |From the seven line down |
+|+2,$-3p | lines starting from two below the current line and up to the third to last line |
 |:'a,'b              |mark a to mark b, inclusive                      |
-|:.,'b               |current line to mark b, inclusive            |
-|:'a,'b     |mark a to b to |
+
+## Search and Replace 
+
+:[range]s/pattern/replacement[/flags...] 
+
+| Command          |  Description                            |
+| ---------------- |:--------------------------------------  |
+| :%s/pattern/replacement/ |Search pattern on each line, and, if found, replace with replacement |
+| :s/hello.*world/***&***/ | you can use the & symbol to put the matching patterns in the replacement string |
+| :2,$s/^\(.*\):\(.*\):\(.*\)$/\2 \1 is \3 years old./ |you may group parts of your pattern using \( and \), and then reference them by \1, \2, and so on|
+
+## Global Actions
+
+:[range]g/pattern/command 
+     
+| Command          |  Description                            |
+| ---------------- |:--------------------------------------  |
+| :g/^$/d | find all lines with nothing between their start and end and delete them |
+
+## All Purpose Filters 
+
+:range!command
+
+| Command          |  Description                            |
+| ---------------- |:--------------------------------------  |
+| :3,8!sort | sort lines 3 to 8 |
 
 ## Marks 
 
@@ -173,16 +195,15 @@ Delete stays in normal mode after deleting.
 | Command         | Description                    |
 | :-------------  | :------------------------------|
 |:'<,'>       |for every line in the visual block(press : while in visual mode)|
-|g/^/         |on every line that matches the regex /^/ - i.e. every line|
 |norm         |run in normal mode|
 |@a           |the macro recorded in a|
-
 
 ## Undo redo
 
 `u Ctrl`
 
 ## Command mode
+
 | Command     |  Description                                 |
 | :-----------|:---------------------------------------------|
 |:![shell command]          | execute any command in the shell |
@@ -195,8 +216,6 @@ Delete stays in normal mode after deleting.
 |:78,83join   |join range of lines together                  |
 |:earlier 5s  |go back in time                               |
 
-
-
 ## Pattern matching commands
 
 | Command  | Description                                                   |
@@ -204,8 +223,6 @@ Delete stays in normal mode after deleting.
 |/target ?target         |Search next or previous target |
 |n N         |next or previous matching                                                  |
 |* #         |next or previous whole word under cursor                                   |
-
-
 
 ## Search commands
 
@@ -221,8 +238,6 @@ Delete stays in normal mode after deleting.
 |:g//                   |lines where the last search pattern is                |
 |qaq:g/pattern/y A      |copy lines matching pattern to register 'a'.                 |
 |:g/pattern/normal @q   |run a macro on matching lines                                      |
-
-
 
 ## Macros
 
@@ -265,12 +280,9 @@ Delete stays in normal mode after deleting.
 |[z ]z|move to the start or the end of the current open fold.|
 |zj zk|move downwards or upwards |
 
-
 ## Recursive macros
 
     qqq qq <commands> @q q record a recursive macro in register q
-
-
 
 ## Avoiding escape key
 
