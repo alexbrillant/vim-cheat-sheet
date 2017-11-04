@@ -75,6 +75,7 @@ Delete stays in normal mode after deleting.
 
 | Command  | Description                                      |
 | :--------| :----------------------------------------------- |
+|cm|	change text of movement command m|
 | D C | delete or change till the end of the line |
 | cc S | delete all text on line and start inserting in it's place |
 | dnG cnG | delete or change from current position to line n |
@@ -118,6 +119,8 @@ Delete stays in normal mode after deleting.
 |CTRL-U|	delete all inserted character in current line|
 |CTRL-D CTRL-T|	shift left, right one shift width|
 |CTRL-A	|insert previously inserted text|
+|<m >m|	shift left, right text of movement m|
+|n<< n>>|	shift n lines left, right|
 
 ## Visual block
 
