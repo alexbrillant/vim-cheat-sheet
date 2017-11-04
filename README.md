@@ -114,6 +114,10 @@ Delete stays in normal mode after deleting.
 |CTRL-W| messed up a word |
 |CTRL-U| messed up a line |
 |CTRL-O D| delete line in insert mode |
+|CTRL-W|	delete word before cursor|
+|CTRL-U|	delete all inserted character in current line|
+|CTRL-D CTRL-T|	shift left, right one shift width|
+|CTRL-A	|insert previously inserted text|
 
 ## Visual block
 
