@@ -177,7 +177,8 @@ Delete stays in normal mode after deleting.
 
 | Command         | Description                    |
 | :-------------  | :------------------------------|
-|ma 	|set mark a at current cursor location|
+|ma 	|set local file mark a at current cursor location|
+|mA |set global mark at current cursor location |
 |'a 	|jump to line of mark a (first non-blank character in line)|
 |`a 	|jump to position (line and column) of mark a|
 |d'a 	|delete from current line to line of mark a|
