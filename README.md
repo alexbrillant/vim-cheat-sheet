@@ -44,6 +44,7 @@
 |#  *        | search word under cursor   |
 |g# g*      | search last or first occurence |
 |g; g,      |  jump to previous or next edits    |
+|gd gD|	local, global definition of symbol under cursor|
 
 ## Scroll
 
