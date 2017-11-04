@@ -119,6 +119,11 @@ Delete stays in normal mode after deleting.
 
 | Command          |  Description                            |
 | ---------------- |:--------------------------------------  |
+|v V ^V	|start/stop highlighting characters, lines, block|
+|o	|exchange cursor position with start of highlighting|
+|gv	|start highlighting on previous visual area|
+|aw as ap	|select a word, a sentence, a paragraph|
+|ab aB|	select a block ( ), a block { }|
 |shiftj shiftJ     |join lines                               |
 |Column + c<char>  |change character in column               |
 |YVR<char>         |replace all the line with a repeated char|
