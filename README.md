@@ -11,10 +11,15 @@ Cut an arbitraty selection of text :
 ```
 
 :.,+21g/foo/d means "delete any lines containing the string "foo" from the current one through the next 21 lines"
+
 :.,$v/bar/d means "from here to the end of the file, delete any lines which DON'T contain the string "bar."
+
 :% g/foo/m$ ... and all the "foo" lines will have been moved to the end of the file.
+
 :% g/^   /-1j (for every matching line, go up one line and join them)
+
 :% g/foo/s/bar/zzz/g -- for every line containing "foo" substitute all "bar" with "zzz."
+
 :'a,'bg/foo/j to join any line containing the string foo to its subsequent line, if it lies between the lines between the 'a' and 'b' marks.
 
 
