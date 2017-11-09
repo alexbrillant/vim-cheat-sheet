@@ -1,5 +1,15 @@
 # **Vim cheat sheet**
 
+Cut an arbitraty selection of text : 
+```
+     d`a y`a
+     d}
+     d/foo
+     d?foo
+     "by/foo
+     d5}
+```
+
 ## Files
 
 | Command | Description
