@@ -22,7 +22,6 @@ Cut an arbitraty selection of text :
 
 :'a,'bg/foo/j to join any line containing the string foo to its subsequent line, if it lies between the lines between the 'a' and 'b' marks.
 
-
 ## Files
 
 | Command | Description
@@ -85,6 +84,7 @@ Cut an arbitraty selection of text :
 | :-----   |:-----------------------------------------------------  |
 |yy      |yank current line (say "first line").                   |
 |Y       |yank line from current position to the end              |
+| P | paste before cursor |
 |yiw     |yank inner word (copy word under cursor, say "first")   |
 |viwp    |select "second", then replace it with what is yanked           |
 |Vp      |select current line", then replace it with yanked line.|
